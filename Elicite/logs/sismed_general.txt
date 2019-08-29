@@ -1,0 +1,888 @@
+2008-06-06 21:08:49.828 [8] DEBUG NHibernate.Impl.SessionImpl - collection initialized
+2008-06-06 21:08:49.890 [8] DEBUG NHibernate.Impl.SessionImpl - initializing collection [Cefet.Elicite.Dominio.Requisito.RequisitosRastreados#5]
+2008-06-06 21:08:49.890 [8] DEBUG NHibernate.Impl.SessionImpl - checking second-level cache
+2008-06-06 21:08:49.906 [8] DEBUG NHibernate.Impl.SessionImpl - collection not cached
+2008-06-06 21:08:49.906 [8] DEBUG NHibernate.Impl.BatcherImpl - Opened new IDbCommand, open IDbCommands: 1
+2008-06-06 21:08:49.906 [8] DEBUG NHibernate.Impl.BatcherImpl - Building an IDbCommand object for the SqlString: SELECT requisitos0_.id_rastreador as id1___1_, requisitos0_.id_rastreado as id2_1_, requisito1_.id_revisavel as id1_5_0_, requisito1_.descricao as descricao11_0_, requisito1_.nome as nome11_0_, requisito1_.id_projeto as id4_11_0_, requisito1_.id_tipo_requisito as id5_11_0_, requisito1_1_.codigo as codigo5_0_ FROM requisito_requisito requisitos0_ left outer join requisito requisito1_ on requisitos0_.id_rastreado=requisito1_.id_revisavel left outer join revisavel requisito1_1_ on requisito1_.id_revisavel=requisito1_1_.id_revisavel WHERE requisitos0_.id_rastreador=?
+2008-06-06 21:08:49.906 [8] DEBUG NHibernate.Type.Int32Type - binding '5' to parameter: 0
+2008-06-06 21:08:49.906 [8] INFO  NHibernate.Loader.Loader - SELECT requisitos0_.id_rastreador as id1___1_, requisitos0_.id_rastreado as id2_1_, requisito1_.id_revisavel as id1_5_0_, requisito1_.descricao as descricao11_0_, requisito1_.nome as nome11_0_, requisito1_.id_projeto as id4_11_0_, requisito1_.id_tipo_requisito as id5_11_0_, requisito1_1_.codigo as codigo5_0_ FROM requisito_requisito requisitos0_ left outer join requisito requisito1_ on requisitos0_.id_rastreado=requisito1_.id_revisavel left outer join revisavel requisito1_1_ on requisito1_.id_revisavel=requisito1_1_.id_revisavel WHERE requisitos0_.id_rastreador=:p0
+2008-06-06 21:08:49.906 [8] DEBUG NHibernate.SQL - SELECT requisitos0_.id_rastreador as id1___1_, requisitos0_.id_rastreado as id2_1_, requisito1_.id_revisavel as id1_5_0_, requisito1_.descricao as descricao11_0_, requisito1_.nome as nome11_0_, requisito1_.id_projeto as id4_11_0_, requisito1_.id_tipo_requisito as id5_11_0_, requisito1_1_.codigo as codigo5_0_ FROM requisito_requisito requisitos0_ left outer join requisito requisito1_ on requisitos0_.id_rastreado=requisito1_.id_revisavel left outer join revisavel requisito1_1_ on requisito1_.id_revisavel=requisito1_1_.id_revisavel WHERE requisitos0_.id_rastreador=:p0; :p0 = '5'
+2008-06-06 21:08:49.906 [8] DEBUG NHibernate.Impl.BatcherImpl - Opened IDataReader, open IDataReaders: 1
+2008-06-06 21:08:49.906 [8] DEBUG NHibernate.Impl.SessionImpl - uninitialized collection: initializing
+2008-06-06 21:08:49.906 [8] DEBUG NHibernate.Type.Int32Type - returning '27' as column: id1_5_0_
+2008-06-06 21:08:49.906 [8] DEBUG NHibernate.Type.Int32Type - returning '5' as column: id1___1_
+2008-06-06 21:08:49.906 [8] DEBUG NHibernate.Impl.SessionImpl - reading row
+2008-06-06 21:08:49.906 [8] DEBUG NHibernate.Type.Int32Type - returning '27' as column: id2_1_
+2008-06-06 21:08:49.906 [8] DEBUG NHibernate.Impl.SessionImpl - loading [Requisito#27]
+2008-06-06 21:08:49.906 [8] DEBUG NHibernate.Impl.SessionImpl - attempting to resolve [Requisito#27]
+2008-06-06 21:08:49.906 [8] DEBUG NHibernate.Impl.SessionImpl - resolved object in session cache [Cefet.Elicite.Dominio.Requisito#27]
+2008-06-06 21:08:49.906 [8] DEBUG NHibernate.Type.Int32Type - returning '33' as column: id1_5_0_
+2008-06-06 21:08:49.921 [8] DEBUG NHibernate.Type.Int32Type - returning '5' as column: id1___1_
+2008-06-06 21:08:49.921 [8] DEBUG NHibernate.Impl.SessionImpl - reading row
+2008-06-06 21:08:49.921 [8] DEBUG NHibernate.Type.Int32Type - returning '33' as column: id2_1_
+2008-06-06 21:08:49.921 [8] DEBUG NHibernate.Impl.SessionImpl - loading [Requisito#33]
+2008-06-06 21:08:49.921 [8] DEBUG NHibernate.Impl.SessionImpl - attempting to resolve [Requisito#33]
+2008-06-06 21:08:49.921 [8] DEBUG NHibernate.Impl.SessionImpl - resolved object in session cache [Cefet.Elicite.Dominio.Requisito#33]
+2008-06-06 21:08:49.921 [8] DEBUG NHibernate.Impl.BatcherImpl - Closed IDataReader, open IDataReaders :0
+2008-06-06 21:08:49.921 [8] DEBUG NHibernate.Impl.BatcherImpl - Closed IDbCommand, open IDbCommands: 0
+2008-06-06 21:08:49.921 [8] DEBUG NHibernate.Impl.SessionImpl - 1 collections were found in result set
+2008-06-06 21:08:49.921 [8] DEBUG NHibernate.Impl.SessionImpl - collection fully initialized: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreados#5]
+2008-06-06 21:08:49.921 [8] DEBUG NHibernate.Impl.SessionImpl - 1 collections initialized
+2008-06-06 21:08:49.921 [8] DEBUG NHibernate.Impl.SessionImpl - initializing non-lazy collections
+2008-06-06 21:08:49.921 [8] DEBUG NHibernate.Impl.SessionImpl - collection initialized
+2008-06-06 21:08:49.921 [8] DEBUG NHibernate.Impl.SessionImpl - initializing collection [Cefet.Elicite.Dominio.Requisito.RequisitosRastreados#21]
+2008-06-06 21:08:49.921 [8] DEBUG NHibernate.Impl.SessionImpl - checking second-level cache
+2008-06-06 21:08:49.921 [8] DEBUG NHibernate.Impl.SessionImpl - collection not cached
+2008-06-06 21:08:49.921 [8] DEBUG NHibernate.Impl.BatcherImpl - Opened new IDbCommand, open IDbCommands: 1
+2008-06-06 21:08:49.921 [8] DEBUG NHibernate.Impl.BatcherImpl - Building an IDbCommand object for the SqlString: SELECT requisitos0_.id_rastreador as id1___1_, requisitos0_.id_rastreado as id2_1_, requisito1_.id_revisavel as id1_5_0_, requisito1_.descricao as descricao11_0_, requisito1_.nome as nome11_0_, requisito1_.id_projeto as id4_11_0_, requisito1_.id_tipo_requisito as id5_11_0_, requisito1_1_.codigo as codigo5_0_ FROM requisito_requisito requisitos0_ left outer join requisito requisito1_ on requisitos0_.id_rastreado=requisito1_.id_revisavel left outer join revisavel requisito1_1_ on requisito1_.id_revisavel=requisito1_1_.id_revisavel WHERE requisitos0_.id_rastreador=?
+2008-06-06 21:08:49.921 [8] DEBUG NHibernate.Type.Int32Type - binding '21' to parameter: 0
+2008-06-06 21:08:49.921 [8] INFO  NHibernate.Loader.Loader - SELECT requisitos0_.id_rastreador as id1___1_, requisitos0_.id_rastreado as id2_1_, requisito1_.id_revisavel as id1_5_0_, requisito1_.descricao as descricao11_0_, requisito1_.nome as nome11_0_, requisito1_.id_projeto as id4_11_0_, requisito1_.id_tipo_requisito as id5_11_0_, requisito1_1_.codigo as codigo5_0_ FROM requisito_requisito requisitos0_ left outer join requisito requisito1_ on requisitos0_.id_rastreado=requisito1_.id_revisavel left outer join revisavel requisito1_1_ on requisito1_.id_revisavel=requisito1_1_.id_revisavel WHERE requisitos0_.id_rastreador=:p0
+2008-06-06 21:08:49.921 [8] DEBUG NHibernate.SQL - SELECT requisitos0_.id_rastreador as id1___1_, requisitos0_.id_rastreado as id2_1_, requisito1_.id_revisavel as id1_5_0_, requisito1_.descricao as descricao11_0_, requisito1_.nome as nome11_0_, requisito1_.id_projeto as id4_11_0_, requisito1_.id_tipo_requisito as id5_11_0_, requisito1_1_.codigo as codigo5_0_ FROM requisito_requisito requisitos0_ left outer join requisito requisito1_ on requisitos0_.id_rastreado=requisito1_.id_revisavel left outer join revisavel requisito1_1_ on requisito1_.id_revisavel=requisito1_1_.id_revisavel WHERE requisitos0_.id_rastreador=:p0; :p0 = '21'
+2008-06-06 21:08:49.937 [8] DEBUG NHibernate.Impl.BatcherImpl - Opened IDataReader, open IDataReaders: 1
+2008-06-06 21:08:49.937 [8] DEBUG NHibernate.Impl.SessionImpl - uninitialized collection: initializing
+2008-06-06 21:08:49.937 [8] DEBUG NHibernate.Type.Int32Type - returning '28' as column: id1_5_0_
+2008-06-06 21:08:49.937 [8] DEBUG NHibernate.Type.Int32Type - returning '21' as column: id1___1_
+2008-06-06 21:08:49.937 [8] DEBUG NHibernate.Impl.SessionImpl - reading row
+2008-06-06 21:08:49.937 [8] DEBUG NHibernate.Type.Int32Type - returning '28' as column: id2_1_
+2008-06-06 21:08:49.937 [8] DEBUG NHibernate.Impl.SessionImpl - loading [Requisito#28]
+2008-06-06 21:08:49.937 [8] DEBUG NHibernate.Impl.SessionImpl - attempting to resolve [Requisito#28]
+2008-06-06 21:08:49.937 [8] DEBUG NHibernate.Impl.SessionImpl - resolved object in session cache [Cefet.Elicite.Dominio.Requisito#28]
+2008-06-06 21:08:49.937 [8] DEBUG NHibernate.Type.Int32Type - returning '31' as column: id1_5_0_
+2008-06-06 21:08:49.937 [8] DEBUG NHibernate.Type.Int32Type - returning '21' as column: id1___1_
+2008-06-06 21:08:49.937 [8] DEBUG NHibernate.Impl.SessionImpl - reading row
+2008-06-06 21:08:49.937 [8] DEBUG NHibernate.Type.Int32Type - returning '31' as column: id2_1_
+2008-06-06 21:08:49.937 [8] DEBUG NHibernate.Impl.SessionImpl - loading [Requisito#31]
+2008-06-06 21:08:49.937 [8] DEBUG NHibernate.Impl.SessionImpl - attempting to resolve [Requisito#31]
+2008-06-06 21:08:49.937 [8] DEBUG NHibernate.Impl.SessionImpl - resolved object in session cache [Cefet.Elicite.Dominio.Requisito#31]
+2008-06-06 21:08:49.937 [8] DEBUG NHibernate.Impl.BatcherImpl - Closed IDataReader, open IDataReaders :0
+2008-06-06 21:08:49.937 [8] DEBUG NHibernate.Impl.BatcherImpl - Closed IDbCommand, open IDbCommands: 0
+2008-06-06 21:08:49.937 [8] DEBUG NHibernate.Impl.SessionImpl - 1 collections were found in result set
+2008-06-06 21:08:49.937 [8] DEBUG NHibernate.Impl.SessionImpl - collection fully initialized: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreados#21]
+2008-06-06 21:08:49.937 [8] DEBUG NHibernate.Impl.SessionImpl - 1 collections initialized
+2008-06-06 21:08:49.937 [8] DEBUG NHibernate.Impl.SessionImpl - initializing non-lazy collections
+2008-06-06 21:08:49.937 [8] DEBUG NHibernate.Impl.SessionImpl - collection initialized
+2008-06-06 21:08:49.937 [8] DEBUG NHibernate.Impl.SessionImpl - initializing collection [Cefet.Elicite.Dominio.Requisito.RequisitosRastreados#23]
+2008-06-06 21:08:49.937 [8] DEBUG NHibernate.Impl.SessionImpl - checking second-level cache
+2008-06-06 21:08:49.937 [8] DEBUG NHibernate.Impl.SessionImpl - collection not cached
+2008-06-06 21:08:49.952 [8] DEBUG NHibernate.Impl.BatcherImpl - Opened new IDbCommand, open IDbCommands: 1
+2008-06-06 21:08:49.952 [8] DEBUG NHibernate.Impl.BatcherImpl - Building an IDbCommand object for the SqlString: SELECT requisitos0_.id_rastreador as id1___1_, requisitos0_.id_rastreado as id2_1_, requisito1_.id_revisavel as id1_5_0_, requisito1_.descricao as descricao11_0_, requisito1_.nome as nome11_0_, requisito1_.id_projeto as id4_11_0_, requisito1_.id_tipo_requisito as id5_11_0_, requisito1_1_.codigo as codigo5_0_ FROM requisito_requisito requisitos0_ left outer join requisito requisito1_ on requisitos0_.id_rastreado=requisito1_.id_revisavel left outer join revisavel requisito1_1_ on requisito1_.id_revisavel=requisito1_1_.id_revisavel WHERE requisitos0_.id_rastreador=?
+2008-06-06 21:08:49.952 [8] DEBUG NHibernate.Type.Int32Type - binding '23' to parameter: 0
+2008-06-06 21:08:49.952 [8] INFO  NHibernate.Loader.Loader - SELECT requisitos0_.id_rastreador as id1___1_, requisitos0_.id_rastreado as id2_1_, requisito1_.id_revisavel as id1_5_0_, requisito1_.descricao as descricao11_0_, requisito1_.nome as nome11_0_, requisito1_.id_projeto as id4_11_0_, requisito1_.id_tipo_requisito as id5_11_0_, requisito1_1_.codigo as codigo5_0_ FROM requisito_requisito requisitos0_ left outer join requisito requisito1_ on requisitos0_.id_rastreado=requisito1_.id_revisavel left outer join revisavel requisito1_1_ on requisito1_.id_revisavel=requisito1_1_.id_revisavel WHERE requisitos0_.id_rastreador=:p0
+2008-06-06 21:08:49.952 [8] DEBUG NHibernate.SQL - SELECT requisitos0_.id_rastreador as id1___1_, requisitos0_.id_rastreado as id2_1_, requisito1_.id_revisavel as id1_5_0_, requisito1_.descricao as descricao11_0_, requisito1_.nome as nome11_0_, requisito1_.id_projeto as id4_11_0_, requisito1_.id_tipo_requisito as id5_11_0_, requisito1_1_.codigo as codigo5_0_ FROM requisito_requisito requisitos0_ left outer join requisito requisito1_ on requisitos0_.id_rastreado=requisito1_.id_revisavel left outer join revisavel requisito1_1_ on requisito1_.id_revisavel=requisito1_1_.id_revisavel WHERE requisitos0_.id_rastreador=:p0; :p0 = '23'
+2008-06-06 21:08:49.952 [8] DEBUG NHibernate.Impl.BatcherImpl - Opened IDataReader, open IDataReaders: 1
+2008-06-06 21:08:49.952 [8] DEBUG NHibernate.Impl.SessionImpl - uninitialized collection: initializing
+2008-06-06 21:08:49.952 [8] DEBUG NHibernate.Type.Int32Type - returning '22' as column: id1_5_0_
+2008-06-06 21:08:49.952 [8] DEBUG NHibernate.Type.Int32Type - returning '23' as column: id1___1_
+2008-06-06 21:08:49.952 [8] DEBUG NHibernate.Impl.SessionImpl - reading row
+2008-06-06 21:08:49.952 [8] DEBUG NHibernate.Type.Int32Type - returning '22' as column: id2_1_
+2008-06-06 21:08:49.952 [8] DEBUG NHibernate.Impl.SessionImpl - loading [Requisito#22]
+2008-06-06 21:08:49.952 [8] DEBUG NHibernate.Impl.SessionImpl - attempting to resolve [Requisito#22]
+2008-06-06 21:08:49.952 [8] DEBUG NHibernate.Impl.SessionImpl - resolved object in session cache [Cefet.Elicite.Dominio.Requisito#22]
+2008-06-06 21:08:49.952 [8] DEBUG NHibernate.Impl.BatcherImpl - Closed IDataReader, open IDataReaders :0
+2008-06-06 21:08:49.952 [8] DEBUG NHibernate.Impl.BatcherImpl - Closed IDbCommand, open IDbCommands: 0
+2008-06-06 21:08:49.952 [8] DEBUG NHibernate.Impl.SessionImpl - 1 collections were found in result set
+2008-06-06 21:08:49.952 [8] DEBUG NHibernate.Impl.SessionImpl - collection fully initialized: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreados#23]
+2008-06-06 21:08:49.952 [8] DEBUG NHibernate.Impl.SessionImpl - 1 collections initialized
+2008-06-06 21:08:49.952 [8] DEBUG NHibernate.Impl.SessionImpl - initializing non-lazy collections
+2008-06-06 21:08:49.952 [8] DEBUG NHibernate.Impl.SessionImpl - collection initialized
+2008-06-06 21:08:49.952 [8] DEBUG NHibernate.Impl.SessionImpl - initializing collection [Cefet.Elicite.Dominio.Requisito.RequisitosRastreados#26]
+2008-06-06 21:08:49.952 [8] DEBUG NHibernate.Impl.SessionImpl - checking second-level cache
+2008-06-06 21:08:49.952 [8] DEBUG NHibernate.Impl.SessionImpl - collection not cached
+2008-06-06 21:08:49.952 [8] DEBUG NHibernate.Impl.BatcherImpl - Opened new IDbCommand, open IDbCommands: 1
+2008-06-06 21:08:49.952 [8] DEBUG NHibernate.Impl.BatcherImpl - Building an IDbCommand object for the SqlString: SELECT requisitos0_.id_rastreador as id1___1_, requisitos0_.id_rastreado as id2_1_, requisito1_.id_revisavel as id1_5_0_, requisito1_.descricao as descricao11_0_, requisito1_.nome as nome11_0_, requisito1_.id_projeto as id4_11_0_, requisito1_.id_tipo_requisito as id5_11_0_, requisito1_1_.codigo as codigo5_0_ FROM requisito_requisito requisitos0_ left outer join requisito requisito1_ on requisitos0_.id_rastreado=requisito1_.id_revisavel left outer join revisavel requisito1_1_ on requisito1_.id_revisavel=requisito1_1_.id_revisavel WHERE requisitos0_.id_rastreador=?
+2008-06-06 21:08:49.952 [8] DEBUG NHibernate.Type.Int32Type - binding '26' to parameter: 0
+2008-06-06 21:08:49.952 [8] INFO  NHibernate.Loader.Loader - SELECT requisitos0_.id_rastreador as id1___1_, requisitos0_.id_rastreado as id2_1_, requisito1_.id_revisavel as id1_5_0_, requisito1_.descricao as descricao11_0_, requisito1_.nome as nome11_0_, requisito1_.id_projeto as id4_11_0_, requisito1_.id_tipo_requisito as id5_11_0_, requisito1_1_.codigo as codigo5_0_ FROM requisito_requisito requisitos0_ left outer join requisito requisito1_ on requisitos0_.id_rastreado=requisito1_.id_revisavel left outer join revisavel requisito1_1_ on requisito1_.id_revisavel=requisito1_1_.id_revisavel WHERE requisitos0_.id_rastreador=:p0
+2008-06-06 21:08:49.952 [8] DEBUG NHibernate.SQL - SELECT requisitos0_.id_rastreador as id1___1_, requisitos0_.id_rastreado as id2_1_, requisito1_.id_revisavel as id1_5_0_, requisito1_.descricao as descricao11_0_, requisito1_.nome as nome11_0_, requisito1_.id_projeto as id4_11_0_, requisito1_.id_tipo_requisito as id5_11_0_, requisito1_1_.codigo as codigo5_0_ FROM requisito_requisito requisitos0_ left outer join requisito requisito1_ on requisitos0_.id_rastreado=requisito1_.id_revisavel left outer join revisavel requisito1_1_ on requisito1_.id_revisavel=requisito1_1_.id_revisavel WHERE requisitos0_.id_rastreador=:p0; :p0 = '26'
+2008-06-06 21:08:49.968 [8] DEBUG NHibernate.Impl.BatcherImpl - Opened IDataReader, open IDataReaders: 1
+2008-06-06 21:08:49.968 [8] DEBUG NHibernate.Impl.SessionImpl - uninitialized collection: initializing
+2008-06-06 21:08:49.968 [8] DEBUG NHibernate.Type.Int32Type - returning '28' as column: id1_5_0_
+2008-06-06 21:08:49.968 [8] DEBUG NHibernate.Type.Int32Type - returning '26' as column: id1___1_
+2008-06-06 21:08:49.968 [8] DEBUG NHibernate.Impl.SessionImpl - reading row
+2008-06-06 21:08:49.968 [8] DEBUG NHibernate.Type.Int32Type - returning '28' as column: id2_1_
+2008-06-06 21:08:49.968 [8] DEBUG NHibernate.Impl.SessionImpl - loading [Requisito#28]
+2008-06-06 21:08:49.968 [8] DEBUG NHibernate.Impl.SessionImpl - attempting to resolve [Requisito#28]
+2008-06-06 21:08:49.968 [8] DEBUG NHibernate.Impl.SessionImpl - resolved object in session cache [Cefet.Elicite.Dominio.Requisito#28]
+2008-06-06 21:08:49.968 [8] DEBUG NHibernate.Impl.BatcherImpl - Closed IDataReader, open IDataReaders :0
+2008-06-06 21:08:49.968 [8] DEBUG NHibernate.Impl.BatcherImpl - Closed IDbCommand, open IDbCommands: 0
+2008-06-06 21:08:49.968 [8] DEBUG NHibernate.Impl.SessionImpl - 1 collections were found in result set
+2008-06-06 21:08:49.968 [8] DEBUG NHibernate.Impl.SessionImpl - collection fully initialized: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreados#26]
+2008-06-06 21:08:49.968 [8] DEBUG NHibernate.Impl.SessionImpl - 1 collections initialized
+2008-06-06 21:08:49.968 [8] DEBUG NHibernate.Impl.SessionImpl - initializing non-lazy collections
+2008-06-06 21:08:49.968 [8] DEBUG NHibernate.Impl.SessionImpl - collection initialized
+2008-06-06 21:08:49.968 [8] DEBUG NHibernate.Impl.SessionImpl - initializing collection [Cefet.Elicite.Dominio.Requisito.RequisitosRastreados#29]
+2008-06-06 21:08:49.968 [8] DEBUG NHibernate.Impl.SessionImpl - checking second-level cache
+2008-06-06 21:08:49.968 [8] DEBUG NHibernate.Impl.SessionImpl - collection not cached
+2008-06-06 21:08:49.968 [8] DEBUG NHibernate.Impl.BatcherImpl - Opened new IDbCommand, open IDbCommands: 1
+2008-06-06 21:08:49.968 [8] DEBUG NHibernate.Impl.BatcherImpl - Building an IDbCommand object for the SqlString: SELECT requisitos0_.id_rastreador as id1___1_, requisitos0_.id_rastreado as id2_1_, requisito1_.id_revisavel as id1_5_0_, requisito1_.descricao as descricao11_0_, requisito1_.nome as nome11_0_, requisito1_.id_projeto as id4_11_0_, requisito1_.id_tipo_requisito as id5_11_0_, requisito1_1_.codigo as codigo5_0_ FROM requisito_requisito requisitos0_ left outer join requisito requisito1_ on requisitos0_.id_rastreado=requisito1_.id_revisavel left outer join revisavel requisito1_1_ on requisito1_.id_revisavel=requisito1_1_.id_revisavel WHERE requisitos0_.id_rastreador=?
+2008-06-06 21:08:49.968 [8] DEBUG NHibernate.Type.Int32Type - binding '29' to parameter: 0
+2008-06-06 21:08:49.968 [8] INFO  NHibernate.Loader.Loader - SELECT requisitos0_.id_rastreador as id1___1_, requisitos0_.id_rastreado as id2_1_, requisito1_.id_revisavel as id1_5_0_, requisito1_.descricao as descricao11_0_, requisito1_.nome as nome11_0_, requisito1_.id_projeto as id4_11_0_, requisito1_.id_tipo_requisito as id5_11_0_, requisito1_1_.codigo as codigo5_0_ FROM requisito_requisito requisitos0_ left outer join requisito requisito1_ on requisitos0_.id_rastreado=requisito1_.id_revisavel left outer join revisavel requisito1_1_ on requisito1_.id_revisavel=requisito1_1_.id_revisavel WHERE requisitos0_.id_rastreador=:p0
+2008-06-06 21:08:49.968 [8] DEBUG NHibernate.SQL - SELECT requisitos0_.id_rastreador as id1___1_, requisitos0_.id_rastreado as id2_1_, requisito1_.id_revisavel as id1_5_0_, requisito1_.descricao as descricao11_0_, requisito1_.nome as nome11_0_, requisito1_.id_projeto as id4_11_0_, requisito1_.id_tipo_requisito as id5_11_0_, requisito1_1_.codigo as codigo5_0_ FROM requisito_requisito requisitos0_ left outer join requisito requisito1_ on requisitos0_.id_rastreado=requisito1_.id_revisavel left outer join revisavel requisito1_1_ on requisito1_.id_revisavel=requisito1_1_.id_revisavel WHERE requisitos0_.id_rastreador=:p0; :p0 = '29'
+2008-06-06 21:08:49.968 [8] DEBUG NHibernate.Impl.BatcherImpl - Opened IDataReader, open IDataReaders: 1
+2008-06-06 21:08:49.984 [8] DEBUG NHibernate.Impl.SessionImpl - uninitialized collection: initializing
+2008-06-06 21:08:49.984 [8] DEBUG NHibernate.Type.Int32Type - returning '31' as column: id1_5_0_
+2008-06-06 21:08:49.984 [8] DEBUG NHibernate.Type.Int32Type - returning '29' as column: id1___1_
+2008-06-06 21:08:49.984 [8] DEBUG NHibernate.Impl.SessionImpl - reading row
+2008-06-06 21:08:49.984 [8] DEBUG NHibernate.Type.Int32Type - returning '31' as column: id2_1_
+2008-06-06 21:08:49.984 [8] DEBUG NHibernate.Impl.SessionImpl - loading [Requisito#31]
+2008-06-06 21:08:49.984 [8] DEBUG NHibernate.Impl.SessionImpl - attempting to resolve [Requisito#31]
+2008-06-06 21:08:49.984 [8] DEBUG NHibernate.Impl.SessionImpl - resolved object in session cache [Cefet.Elicite.Dominio.Requisito#31]
+2008-06-06 21:08:49.984 [8] DEBUG NHibernate.Type.Int32Type - returning '27' as column: id1_5_0_
+2008-06-06 21:08:49.984 [8] DEBUG NHibernate.Type.Int32Type - returning '29' as column: id1___1_
+2008-06-06 21:08:49.984 [8] DEBUG NHibernate.Impl.SessionImpl - reading row
+2008-06-06 21:08:49.984 [8] DEBUG NHibernate.Type.Int32Type - returning '27' as column: id2_1_
+2008-06-06 21:08:49.984 [8] DEBUG NHibernate.Impl.SessionImpl - loading [Requisito#27]
+2008-06-06 21:08:49.984 [8] DEBUG NHibernate.Impl.SessionImpl - attempting to resolve [Requisito#27]
+2008-06-06 21:08:49.984 [8] DEBUG NHibernate.Impl.SessionImpl - resolved object in session cache [Cefet.Elicite.Dominio.Requisito#27]
+2008-06-06 21:08:49.984 [8] DEBUG NHibernate.Type.Int32Type - returning '28' as column: id1_5_0_
+2008-06-06 21:08:49.984 [8] DEBUG NHibernate.Type.Int32Type - returning '29' as column: id1___1_
+2008-06-06 21:08:49.984 [8] DEBUG NHibernate.Impl.SessionImpl - reading row
+2008-06-06 21:08:49.984 [8] DEBUG NHibernate.Type.Int32Type - returning '28' as column: id2_1_
+2008-06-06 21:08:49.984 [8] DEBUG NHibernate.Impl.SessionImpl - loading [Requisito#28]
+2008-06-06 21:08:49.984 [8] DEBUG NHibernate.Impl.SessionImpl - attempting to resolve [Requisito#28]
+2008-06-06 21:08:49.984 [8] DEBUG NHibernate.Impl.SessionImpl - resolved object in session cache [Cefet.Elicite.Dominio.Requisito#28]
+2008-06-06 21:08:49.984 [8] DEBUG NHibernate.Type.Int32Type - returning '24' as column: id1_5_0_
+2008-06-06 21:08:49.984 [8] DEBUG NHibernate.Type.Int32Type - returning '29' as column: id1___1_
+2008-06-06 21:08:49.984 [8] DEBUG NHibernate.Impl.SessionImpl - reading row
+2008-06-06 21:08:49.984 [8] DEBUG NHibernate.Type.Int32Type - returning '24' as column: id2_1_
+2008-06-06 21:08:49.984 [8] DEBUG NHibernate.Impl.SessionImpl - loading [Requisito#24]
+2008-06-06 21:08:49.984 [8] DEBUG NHibernate.Impl.SessionImpl - attempting to resolve [Requisito#24]
+2008-06-06 21:08:49.984 [8] DEBUG NHibernate.Impl.SessionImpl - resolved object in session cache [Cefet.Elicite.Dominio.Requisito#24]
+2008-06-06 21:08:49.984 [8] DEBUG NHibernate.Impl.BatcherImpl - Closed IDataReader, open IDataReaders :0
+2008-06-06 21:08:49.984 [8] DEBUG NHibernate.Impl.BatcherImpl - Closed IDbCommand, open IDbCommands: 0
+2008-06-06 21:08:49.984 [8] DEBUG NHibernate.Impl.SessionImpl - 1 collections were found in result set
+2008-06-06 21:08:49.984 [8] DEBUG NHibernate.Impl.SessionImpl - collection fully initialized: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreados#29]
+2008-06-06 21:08:49.984 [8] DEBUG NHibernate.Impl.SessionImpl - 1 collections initialized
+2008-06-06 21:08:49.984 [8] DEBUG NHibernate.Impl.SessionImpl - initializing non-lazy collections
+2008-06-06 21:08:49.984 [8] DEBUG NHibernate.Impl.SessionImpl - collection initialized
+2008-06-06 21:08:49.984 [8] DEBUG NHibernate.Impl.SessionImpl - initializing collection [Cefet.Elicite.Dominio.Requisito.RequisitosRastreados#32]
+2008-06-06 21:08:49.984 [8] DEBUG NHibernate.Impl.SessionImpl - checking second-level cache
+2008-06-06 21:08:49.984 [8] DEBUG NHibernate.Impl.SessionImpl - collection not cached
+2008-06-06 21:08:49.984 [8] DEBUG NHibernate.Impl.BatcherImpl - Opened new IDbCommand, open IDbCommands: 1
+2008-06-06 21:08:49.984 [8] DEBUG NHibernate.Impl.BatcherImpl - Building an IDbCommand object for the SqlString: SELECT requisitos0_.id_rastreador as id1___1_, requisitos0_.id_rastreado as id2_1_, requisito1_.id_revisavel as id1_5_0_, requisito1_.descricao as descricao11_0_, requisito1_.nome as nome11_0_, requisito1_.id_projeto as id4_11_0_, requisito1_.id_tipo_requisito as id5_11_0_, requisito1_1_.codigo as codigo5_0_ FROM requisito_requisito requisitos0_ left outer join requisito requisito1_ on requisitos0_.id_rastreado=requisito1_.id_revisavel left outer join revisavel requisito1_1_ on requisito1_.id_revisavel=requisito1_1_.id_revisavel WHERE requisitos0_.id_rastreador=?
+2008-06-06 21:08:49.984 [8] DEBUG NHibernate.Type.Int32Type - binding '32' to parameter: 0
+2008-06-06 21:08:49.984 [8] INFO  NHibernate.Loader.Loader - SELECT requisitos0_.id_rastreador as id1___1_, requisitos0_.id_rastreado as id2_1_, requisito1_.id_revisavel as id1_5_0_, requisito1_.descricao as descricao11_0_, requisito1_.nome as nome11_0_, requisito1_.id_projeto as id4_11_0_, requisito1_.id_tipo_requisito as id5_11_0_, requisito1_1_.codigo as codigo5_0_ FROM requisito_requisito requisitos0_ left outer join requisito requisito1_ on requisitos0_.id_rastreado=requisito1_.id_revisavel left outer join revisavel requisito1_1_ on requisito1_.id_revisavel=requisito1_1_.id_revisavel WHERE requisitos0_.id_rastreador=:p0
+2008-06-06 21:08:49.984 [8] DEBUG NHibernate.SQL - SELECT requisitos0_.id_rastreador as id1___1_, requisitos0_.id_rastreado as id2_1_, requisito1_.id_revisavel as id1_5_0_, requisito1_.descricao as descricao11_0_, requisito1_.nome as nome11_0_, requisito1_.id_projeto as id4_11_0_, requisito1_.id_tipo_requisito as id5_11_0_, requisito1_1_.codigo as codigo5_0_ FROM requisito_requisito requisitos0_ left outer join requisito requisito1_ on requisitos0_.id_rastreado=requisito1_.id_revisavel left outer join revisavel requisito1_1_ on requisito1_.id_revisavel=requisito1_1_.id_revisavel WHERE requisitos0_.id_rastreador=:p0; :p0 = '32'
+2008-06-06 21:08:49.999 [8] DEBUG NHibernate.Impl.BatcherImpl - Opened IDataReader, open IDataReaders: 1
+2008-06-06 21:08:49.999 [8] DEBUG NHibernate.Impl.SessionImpl - uninitialized collection: initializing
+2008-06-06 21:08:49.999 [8] DEBUG NHibernate.Type.Int32Type - returning '33' as column: id1_5_0_
+2008-06-06 21:08:49.999 [8] DEBUG NHibernate.Type.Int32Type - returning '32' as column: id1___1_
+2008-06-06 21:08:49.999 [8] DEBUG NHibernate.Impl.SessionImpl - reading row
+2008-06-06 21:08:49.999 [8] DEBUG NHibernate.Type.Int32Type - returning '33' as column: id2_1_
+2008-06-06 21:08:49.999 [8] DEBUG NHibernate.Impl.SessionImpl - loading [Requisito#33]
+2008-06-06 21:08:49.999 [8] DEBUG NHibernate.Impl.SessionImpl - attempting to resolve [Requisito#33]
+2008-06-06 21:08:49.999 [8] DEBUG NHibernate.Impl.SessionImpl - resolved object in session cache [Cefet.Elicite.Dominio.Requisito#33]
+2008-06-06 21:08:49.999 [8] DEBUG NHibernate.Impl.BatcherImpl - Closed IDataReader, open IDataReaders :0
+2008-06-06 21:08:49.999 [8] DEBUG NHibernate.Impl.BatcherImpl - Closed IDbCommand, open IDbCommands: 0
+2008-06-06 21:08:49.999 [8] DEBUG NHibernate.Impl.SessionImpl - 1 collections were found in result set
+2008-06-06 21:08:49.999 [8] DEBUG NHibernate.Impl.SessionImpl - collection fully initialized: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreados#32]
+2008-06-06 21:08:49.999 [8] DEBUG NHibernate.Impl.SessionImpl - 1 collections initialized
+2008-06-06 21:08:49.999 [8] DEBUG NHibernate.Impl.SessionImpl - initializing non-lazy collections
+2008-06-06 21:08:49.999 [8] DEBUG NHibernate.Impl.SessionImpl - collection initialized
+2008-06-06 21:08:50.077 [8] DEBUG NHibernate.Transaction.AdoTransaction - commit
+2008-06-06 21:08:50.077 [8] DEBUG NHibernate.Impl.SessionImpl - flushing session
+2008-06-06 21:08:50.077 [8] DEBUG NHibernate.Engine.Cascades - processing cascades for: Cefet.Elicite.Dominio.Requisito
+2008-06-06 21:08:50.077 [8] DEBUG NHibernate.Engine.Cascades - cascading to collection: Cefet.Elicite.Dominio.Revisavel.Historicos
+2008-06-06 21:08:50.077 [8] DEBUG NHibernate.Engine.Cascades - cascading to SaveOrUpdate()
+2008-06-06 21:08:50.077 [8] DEBUG NHibernate.Impl.SessionImpl - SaveOrUpdate() persistent instance
+2008-06-06 21:08:50.077 [8] DEBUG NHibernate.Engine.Cascades - done processing cascades for: Cefet.Elicite.Dominio.Requisito
+2008-06-06 21:08:50.077 [8] DEBUG NHibernate.Engine.Cascades - processing cascades for: Cefet.Elicite.Dominio.Requisito
+2008-06-06 21:08:50.077 [8] DEBUG NHibernate.Engine.Cascades - cascading to collection: Cefet.Elicite.Dominio.Revisavel.Historicos
+2008-06-06 21:08:50.077 [8] DEBUG NHibernate.Engine.Cascades - cascading to SaveOrUpdate()
+2008-06-06 21:08:50.077 [8] DEBUG NHibernate.Impl.SessionImpl - SaveOrUpdate() persistent instance
+2008-06-06 21:08:50.077 [8] DEBUG NHibernate.Engine.Cascades - done processing cascades for: Cefet.Elicite.Dominio.Requisito
+2008-06-06 21:08:50.077 [8] DEBUG NHibernate.Engine.Cascades - processing cascades for: Cefet.Elicite.Dominio.Requisito
+2008-06-06 21:08:50.077 [8] DEBUG NHibernate.Engine.Cascades - cascading to collection: Cefet.Elicite.Dominio.Revisavel.Historicos
+2008-06-06 21:08:50.077 [8] DEBUG NHibernate.Engine.Cascades - cascading to SaveOrUpdate()
+2008-06-06 21:08:50.077 [8] DEBUG NHibernate.Impl.SessionImpl - SaveOrUpdate() persistent instance
+2008-06-06 21:08:50.077 [8] DEBUG NHibernate.Engine.Cascades - done processing cascades for: Cefet.Elicite.Dominio.Requisito
+2008-06-06 21:08:50.077 [8] DEBUG NHibernate.Engine.Cascades - processing cascades for: Cefet.Elicite.Dominio.Requisito
+2008-06-06 21:08:50.077 [8] DEBUG NHibernate.Engine.Cascades - cascading to collection: Cefet.Elicite.Dominio.Revisavel.Historicos
+2008-06-06 21:08:50.077 [8] DEBUG NHibernate.Engine.Cascades - cascading to SaveOrUpdate()
+2008-06-06 21:08:50.077 [8] DEBUG NHibernate.Impl.SessionImpl - SaveOrUpdate() persistent instance
+2008-06-06 21:08:50.077 [8] DEBUG NHibernate.Engine.Cascades - done processing cascades for: Cefet.Elicite.Dominio.Requisito
+2008-06-06 21:08:50.077 [8] DEBUG NHibernate.Engine.Cascades - processing cascades for: Cefet.Elicite.Dominio.Requisito
+2008-06-06 21:08:50.077 [8] DEBUG NHibernate.Engine.Cascades - cascading to collection: Cefet.Elicite.Dominio.Revisavel.Historicos
+2008-06-06 21:08:50.077 [8] DEBUG NHibernate.Engine.Cascades - cascading to SaveOrUpdate()
+2008-06-06 21:08:50.077 [8] DEBUG NHibernate.Impl.SessionImpl - SaveOrUpdate() persistent instance
+2008-06-06 21:08:50.077 [8] DEBUG NHibernate.Engine.Cascades - done processing cascades for: Cefet.Elicite.Dominio.Requisito
+2008-06-06 21:08:50.077 [8] DEBUG NHibernate.Engine.Cascades - processing cascades for: Cefet.Elicite.Dominio.Requisito
+2008-06-06 21:08:50.077 [8] DEBUG NHibernate.Engine.Cascades - cascading to collection: Cefet.Elicite.Dominio.Revisavel.Historicos
+2008-06-06 21:08:50.077 [8] DEBUG NHibernate.Engine.Cascades - cascading to SaveOrUpdate()
+2008-06-06 21:08:50.077 [8] DEBUG NHibernate.Impl.SessionImpl - SaveOrUpdate() persistent instance
+2008-06-06 21:08:50.077 [8] DEBUG NHibernate.Engine.Cascades - done processing cascades for: Cefet.Elicite.Dominio.Requisito
+2008-06-06 21:08:50.077 [8] DEBUG NHibernate.Engine.Cascades - processing cascades for: Cefet.Elicite.Dominio.Requisito
+2008-06-06 21:08:50.077 [8] DEBUG NHibernate.Engine.Cascades - cascading to collection: Cefet.Elicite.Dominio.Revisavel.Historicos
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Engine.Cascades - cascading to SaveOrUpdate()
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Impl.SessionImpl - SaveOrUpdate() persistent instance
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Engine.Cascades - cascading to SaveOrUpdate()
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Impl.SessionImpl - SaveOrUpdate() persistent instance
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Engine.Cascades - done processing cascades for: Cefet.Elicite.Dominio.Requisito
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Engine.Cascades - processing cascades for: Cefet.Elicite.Dominio.Requisito
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Engine.Cascades - cascading to collection: Cefet.Elicite.Dominio.Revisavel.Historicos
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Engine.Cascades - cascading to SaveOrUpdate()
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Impl.SessionImpl - SaveOrUpdate() persistent instance
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Engine.Cascades - done processing cascades for: Cefet.Elicite.Dominio.Requisito
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Engine.Cascades - processing cascades for: Cefet.Elicite.Dominio.Requisito
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Engine.Cascades - cascading to collection: Cefet.Elicite.Dominio.Revisavel.Historicos
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Engine.Cascades - cascading to SaveOrUpdate()
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Impl.SessionImpl - SaveOrUpdate() persistent instance
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Engine.Cascades - done processing cascades for: Cefet.Elicite.Dominio.Requisito
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Engine.Cascades - processing cascades for: Cefet.Elicite.Dominio.Requisito
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Engine.Cascades - cascading to collection: Cefet.Elicite.Dominio.Revisavel.Historicos
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Engine.Cascades - cascading to SaveOrUpdate()
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Impl.SessionImpl - SaveOrUpdate() persistent instance
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Engine.Cascades - done processing cascades for: Cefet.Elicite.Dominio.Requisito
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Engine.Cascades - processing cascades for: Cefet.Elicite.Dominio.Requisito
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Engine.Cascades - cascading to collection: Cefet.Elicite.Dominio.Revisavel.Historicos
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Engine.Cascades - cascading to SaveOrUpdate()
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Impl.SessionImpl - SaveOrUpdate() persistent instance
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Engine.Cascades - done processing cascades for: Cefet.Elicite.Dominio.Requisito
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Engine.Cascades - processing cascades for: Cefet.Elicite.Dominio.Requisito
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Engine.Cascades - cascading to collection: Cefet.Elicite.Dominio.Revisavel.Historicos
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Engine.Cascades - cascading to SaveOrUpdate()
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Impl.SessionImpl - SaveOrUpdate() persistent instance
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Engine.Cascades - done processing cascades for: Cefet.Elicite.Dominio.Requisito
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Engine.Cascades - processing cascades for: Cefet.Elicite.Dominio.Requisito
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Engine.Cascades - cascading to collection: Cefet.Elicite.Dominio.Revisavel.Historicos
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Engine.Cascades - cascading to SaveOrUpdate()
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Impl.SessionImpl - SaveOrUpdate() persistent instance
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Engine.Cascades - done processing cascades for: Cefet.Elicite.Dominio.Requisito
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Engine.Cascades - processing cascades for: Cefet.Elicite.Dominio.Requisito
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Engine.Cascades - cascading to collection: Cefet.Elicite.Dominio.Revisavel.Historicos
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Engine.Cascades - cascading to SaveOrUpdate()
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Impl.SessionImpl - SaveOrUpdate() persistent instance
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Engine.Cascades - done processing cascades for: Cefet.Elicite.Dominio.Requisito
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Impl.SessionImpl - Flushing entities and processing referenced collections
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Requisito.RequisitosRastreados
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreados#5], was: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreados#5]
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Requisito.RequisitosRastreiam
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreiam#5], was: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreiam#5]
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Requisito.CasosDeUsoRastreiam
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Requisito.CasosDeUsoRastreiam#5], was: [Cefet.Elicite.Dominio.Requisito.CasosDeUsoRastreiam#5]
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Revisavel.Historicos
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Revisavel.Historicos#5], was: [Cefet.Elicite.Dominio.Revisavel.Historicos#5]
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Requisito.RequisitosRastreados
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreados#21], was: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreados#21]
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Requisito.RequisitosRastreiam
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreiam#21], was: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreiam#21]
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Requisito.CasosDeUsoRastreiam
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Requisito.CasosDeUsoRastreiam#21], was: [Cefet.Elicite.Dominio.Requisito.CasosDeUsoRastreiam#21]
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Revisavel.Historicos
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Revisavel.Historicos#21], was: [Cefet.Elicite.Dominio.Revisavel.Historicos#21]
+2008-06-06 21:08:50.093 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Requisito.RequisitosRastreados
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreados#23], was: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreados#23]
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Requisito.RequisitosRastreiam
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreiam#23], was: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreiam#23]
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Requisito.CasosDeUsoRastreiam
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Requisito.CasosDeUsoRastreiam#23], was: [Cefet.Elicite.Dominio.Requisito.CasosDeUsoRastreiam#23]
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Revisavel.Historicos
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Revisavel.Historicos#23], was: [Cefet.Elicite.Dominio.Revisavel.Historicos#23]
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Requisito.RequisitosRastreados
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreados#26], was: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreados#26]
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Requisito.RequisitosRastreiam
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreiam#26], was: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreiam#26]
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Requisito.CasosDeUsoRastreiam
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Requisito.CasosDeUsoRastreiam#26], was: [Cefet.Elicite.Dominio.Requisito.CasosDeUsoRastreiam#26]
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Revisavel.Historicos
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Revisavel.Historicos#26], was: [Cefet.Elicite.Dominio.Revisavel.Historicos#26]
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Requisito.RequisitosRastreados
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreados#29], was: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreados#29]
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Requisito.RequisitosRastreiam
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreiam#29], was: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreiam#29]
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Requisito.CasosDeUsoRastreiam
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Requisito.CasosDeUsoRastreiam#29], was: [Cefet.Elicite.Dominio.Requisito.CasosDeUsoRastreiam#29]
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Revisavel.Historicos
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Revisavel.Historicos#29], was: [Cefet.Elicite.Dominio.Revisavel.Historicos#29]
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Requisito.RequisitosRastreados
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreados#32], was: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreados#32]
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Requisito.RequisitosRastreiam
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreiam#32], was: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreiam#32]
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Requisito.CasosDeUsoRastreiam
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Requisito.CasosDeUsoRastreiam#32], was: [Cefet.Elicite.Dominio.Requisito.CasosDeUsoRastreiam#32]
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Revisavel.Historicos
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Revisavel.Historicos#32], was: [Cefet.Elicite.Dominio.Revisavel.Historicos#32]
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Requisito.RequisitosRastreados
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreados#22], was: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreados#22]
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Requisito.RequisitosRastreiam
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreiam#22], was: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreiam#22]
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Requisito.CasosDeUsoRastreiam
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Requisito.CasosDeUsoRastreiam#22], was: [Cefet.Elicite.Dominio.Requisito.CasosDeUsoRastreiam#22]
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Revisavel.Historicos
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Revisavel.Historicos#22], was: [Cefet.Elicite.Dominio.Revisavel.Historicos#22]
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Requisito.RequisitosRastreados
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreados#24], was: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreados#24]
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Requisito.RequisitosRastreiam
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreiam#24], was: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreiam#24]
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Requisito.CasosDeUsoRastreiam
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Requisito.CasosDeUsoRastreiam#24], was: [Cefet.Elicite.Dominio.Requisito.CasosDeUsoRastreiam#24]
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Revisavel.Historicos
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Revisavel.Historicos#24], was: [Cefet.Elicite.Dominio.Revisavel.Historicos#24]
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Requisito.RequisitosRastreados
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreados#25], was: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreados#25]
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Requisito.RequisitosRastreiam
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreiam#25], was: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreiam#25]
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Requisito.CasosDeUsoRastreiam
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Requisito.CasosDeUsoRastreiam#25], was: [Cefet.Elicite.Dominio.Requisito.CasosDeUsoRastreiam#25]
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Revisavel.Historicos
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Revisavel.Historicos#25], was: [Cefet.Elicite.Dominio.Revisavel.Historicos#25]
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Requisito.RequisitosRastreados
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreados#27], was: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreados#27]
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Requisito.RequisitosRastreiam
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreiam#27], was: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreiam#27]
+2008-06-06 21:08:50.108 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Requisito.CasosDeUsoRastreiam
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Requisito.CasosDeUsoRastreiam#27], was: [Cefet.Elicite.Dominio.Requisito.CasosDeUsoRastreiam#27]
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Revisavel.Historicos
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Revisavel.Historicos#27], was: [Cefet.Elicite.Dominio.Revisavel.Historicos#27]
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Requisito.RequisitosRastreados
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreados#28], was: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreados#28]
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Requisito.RequisitosRastreiam
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreiam#28], was: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreiam#28]
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Requisito.CasosDeUsoRastreiam
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Requisito.CasosDeUsoRastreiam#28], was: [Cefet.Elicite.Dominio.Requisito.CasosDeUsoRastreiam#28]
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Revisavel.Historicos
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Revisavel.Historicos#28], was: [Cefet.Elicite.Dominio.Revisavel.Historicos#28]
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Requisito.RequisitosRastreados
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreados#30], was: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreados#30]
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Requisito.RequisitosRastreiam
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreiam#30], was: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreiam#30]
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Requisito.CasosDeUsoRastreiam
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Requisito.CasosDeUsoRastreiam#30], was: [Cefet.Elicite.Dominio.Requisito.CasosDeUsoRastreiam#30]
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Revisavel.Historicos
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Revisavel.Historicos#30], was: [Cefet.Elicite.Dominio.Revisavel.Historicos#30]
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Requisito.RequisitosRastreados
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreados#31], was: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreados#31]
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Requisito.RequisitosRastreiam
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreiam#31], was: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreiam#31]
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Requisito.CasosDeUsoRastreiam
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Requisito.CasosDeUsoRastreiam#31], was: [Cefet.Elicite.Dominio.Requisito.CasosDeUsoRastreiam#31]
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Revisavel.Historicos
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Revisavel.Historicos#31], was: [Cefet.Elicite.Dominio.Revisavel.Historicos#31]
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Requisito.RequisitosRastreados
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreados#33], was: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreados#33]
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Requisito.RequisitosRastreiam
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreiam#33], was: [Cefet.Elicite.Dominio.Requisito.RequisitosRastreiam#33]
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Requisito.CasosDeUsoRastreiam
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Requisito.CasosDeUsoRastreiam#33], was: [Cefet.Elicite.Dominio.Requisito.CasosDeUsoRastreiam#33]
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.AbstractVisitor - Processing collection for role Cefet.Elicite.Dominio.Revisavel.Historicos
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.SessionImpl - Collection found: [Cefet.Elicite.Dominio.Revisavel.Historicos#33], was: [Cefet.Elicite.Dominio.Revisavel.Historicos#33]
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.SessionImpl - Processing unreferenced collections
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.SessionImpl - scheduling collection removes/(re)creates/updates
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.SessionImpl - Flushed: 0 insertions, 0 updates, 0 deletions to 29 objects
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.SessionImpl - Flushed: 0 (re)creations, 0 updates, 0 removals to 56 collections
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.Printer - listing entities:
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.Printer - Cefet.Elicite.Dominio.Requisito{Codigo=11, Atributo=TipoRequisito#2, Historicos=[Historico#23], Descricao=Eita nóis, Nome=Eita nóis5, RequisitosRastreiam=uninitialized, CasosDeUsoRastreiam=uninitialized, Projeto=Projeto#1, Id=31, RequisitosRastreados=uninitialized}
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.Printer - Cefet.Elicite.Dominio.Requisito{Codigo=10, Atributo=TipoRequisito#2, Historicos=[Historico#22], Descricao=Eita nóis, Nome=Eita nóis3, RequisitosRastreiam=uninitialized, CasosDeUsoRastreiam=uninitialized, Projeto=Projeto#1, Id=30, RequisitosRastreados=uninitialized}
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.Printer - Cefet.Elicite.Dominio.Requisito{Codigo=8, Atributo=TipoRequisito#2, Historicos=[Historico#19], Descricao=teste de código, Nome=teste de código 2, RequisitosRastreiam=uninitialized, CasosDeUsoRastreiam=uninitialized, Projeto=Projeto#1, Id=27, RequisitosRastreados=uninitialized}
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.Printer - Cefet.Elicite.Dominio.Historico{Data=06/01/2008, Revisavel=Requisito#33, Autor=Usuario#5, Descricao=Criação do documento. , Id=25}
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.Printer - Cefet.Elicite.Dominio.Historico{Data=06/01/2008, Revisavel=Requisito#32, Autor=Usuario#5, Descricao=Criação do documento. , Id=24}
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.Printer - Cefet.Elicite.Dominio.Historico{Data=06/01/2008, Revisavel=Requisito#31, Autor=Usuario#5, Descricao=Criação do documento. , Id=23}
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.Printer - Cefet.Elicite.Dominio.Historico{Data=06/01/2008, Revisavel=Requisito#30, Autor=Usuario#5, Descricao=Criação do documento. , Id=22}
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.Printer - Cefet.Elicite.Dominio.Historico{Data=06/01/2008, Revisavel=Requisito#29, Autor=Usuario#5, Descricao=Criação do documento. , Id=21}
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.Printer - Cefet.Elicite.Dominio.Historico{Data=06/01/2008, Revisavel=Requisito#28, Autor=Usuario#5, Descricao=Criação do documento. , Id=20}
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.Printer - Cefet.Elicite.Dominio.Historico{Data=06/01/2008, Revisavel=Requisito#27, Autor=Usuario#5, Descricao=Criação do documento. , Id=19}
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.Printer - Cefet.Elicite.Dominio.Historico{Data=06/01/2008, Revisavel=Requisito#26, Autor=Usuario#5, Descricao=Criação do documento. , Id=18}
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.Printer - Cefet.Elicite.Dominio.Requisito{Codigo=12, Atributo=TipoRequisito#2, Historicos=[Historico#25], Descricao=Eita nóis, Nome=Eita nóis7, RequisitosRastreiam=uninitialized, CasosDeUsoRastreiam=uninitialized, Projeto=Projeto#1, Id=33, RequisitosRastreados=uninitialized}
+2008-06-06 21:08:50.124 [8] DEBUG NHibernate.Impl.Printer - Cefet.Elicite.Dominio.Requisito{Codigo=9, Atributo=TipoRequisito#1, Historicos=[Historico#24], Descricao=Eita nóis, Nome=Eita nóis6, RequisitosRastreiam=uninitialized, CasosDeUsoRastreiam=uninitialized, Projeto=Projeto#1, Id=32, RequisitosRastreados=[Requisito#33]}
+2008-06-06 21:08:50.140 [8] DEBUG NHibernate.Impl.Printer - Cefet.Elicite.Dominio.Historico{Data=02/01/2008, Revisavel=Requisito#23, Autor=Usuario#5, Descricao=Criação do documento. , Id=15}
+2008-06-06 21:08:50.140 [8] DEBUG NHibernate.Impl.Printer - Cefet.Elicite.Dominio.Historico{Data=02/01/2008, Revisavel=Requisito#5, Autor=Usuario#5, Descricao=testeeeee eeeeeeeeeeee, Id=14}
+2008-06-06 21:08:50.140 [8] DEBUG NHibernate.Impl.Printer - Cefet.Elicite.Dominio.Requisito{Codigo=8, Atributo=TipoRequisito#1, Historicos=[Historico#21], Descricao=Eita nóis, Nome=Eita nóis2, RequisitosRastreiam=uninitialized, CasosDeUsoRastreiam=uninitialized, Projeto=Projeto#1, Id=29, RequisitosRastreados=[Requisito#24, Requisito#27, Requisito#28, Requisito#31]}
+2008-06-06 21:08:50.140 [8] DEBUG NHibernate.Impl.Printer - Cefet.Elicite.Dominio.Requisito{Codigo=9, Atributo=TipoRequisito#2, Historicos=[Historico#20], Descricao=Eita nóis, Nome=Eita nóis, RequisitosRastreiam=uninitialized, CasosDeUsoRastreiam=uninitialized, Projeto=Projeto#1, Id=28, RequisitosRastreados=uninitialized}
+2008-06-06 21:08:50.140 [8] DEBUG NHibernate.Impl.Printer - Cefet.Elicite.Dominio.Historico{Data=01/01/2008, Revisavel=Requisito#21, Autor=Usuario#5, Descricao=Criação do documento. , Id=11}
+2008-06-06 21:08:50.140 [8] DEBUG NHibernate.Impl.Printer - Cefet.Elicite.Dominio.Requisito{Codigo=7, Atributo=TipoRequisito#1, Historicos=[Historico#18], Descricao=teste de código, Nome=teste de código, RequisitosRastreiam=uninitialized, CasosDeUsoRastreiam=uninitialized, Projeto=Projeto#1, Id=26, RequisitosRastreados=[Requisito#28]}
+2008-06-06 21:08:50.140 [8] DEBUG NHibernate.Impl.Printer - Cefet.Elicite.Dominio.Requisito{Codigo=6, Atributo=TipoRequisito#2, Historicos=[Historico#17], Descricao=Mais um, Nome=Mais um, RequisitosRastreiam=uninitialized, CasosDeUsoRastreiam=uninitialized, Projeto=Projeto#1, Id=25, RequisitosRastreados=uninitialized}
+2008-06-06 21:08:50.140 [8] DEBUG NHibernate.Impl.Printer - Cefet.Elicite.Dominio.Requisito{Codigo=5, Atributo=TipoRequisito#2, Historicos=[Historico#16], Descricao=Outro teste, Nome=Outro teste, RequisitosRastreiam=uninitialized, CasosDeUsoRastreiam=uninitialized, Projeto=Projeto#1, Id=24, RequisitosRastreados=uninitialized}
+2008-06-06 21:08:50.140 [8] DEBUG NHibernate.Impl.Printer - more......
+2008-06-06 21:08:50.140 [8] DEBUG NHibernate.Impl.SessionImpl - executing flush
+2008-06-06 21:08:50.140 [8] DEBUG NHibernate.Impl.ConnectionManager - registering flush begin
+2008-06-06 21:08:50.140 [8] DEBUG NHibernate.Impl.ConnectionManager - registering flush end
+2008-06-06 21:08:50.140 [8] DEBUG NHibernate.Impl.SessionImpl - post flush
+2008-06-06 21:08:50.140 [8] DEBUG NHibernate.Impl.SessionImpl - before transaction completion
+2008-06-06 21:08:50.140 [8] DEBUG NHibernate.Impl.ConnectionManager - aggressively releasing database connection
+2008-06-06 21:08:50.140 [8] DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+2008-06-06 21:08:50.140 [8] DEBUG NHibernate.Impl.SessionImpl - transaction completion
+2008-06-06 21:08:50.140 [8] DEBUG NHibernate.Transaction.AdoTransaction - running AdoTransaction.Dispose()
+2008-06-06 21:08:50.140 [8] DEBUG NHibernate.Impl.SessionImpl - closing session
+2008-06-06 21:08:50.140 [8] DEBUG NHibernate.Impl.BatcherImpl - running BatcherImpl.Dispose(true)
+2008-06-06 21:08:50.470 [4] DEBUG NHibernate.Impl.SessionImpl - opened session
+2008-06-06 21:08:50.472 [4] DEBUG NHibernate.Transaction.AdoTransaction - begin
+2008-06-06 21:08:50.472 [4] DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+2008-06-06 21:08:50.516 [4] DEBUG NHibernate.Transaction.AdoTransaction - commit
+2008-06-06 21:08:50.516 [4] DEBUG NHibernate.Impl.SessionImpl - flushing session
+2008-06-06 21:08:50.516 [4] DEBUG NHibernate.Impl.SessionImpl - Flushing entities and processing referenced collections
+2008-06-06 21:08:50.516 [4] DEBUG NHibernate.Impl.SessionImpl - Processing unreferenced collections
+2008-06-06 21:08:50.516 [4] DEBUG NHibernate.Impl.SessionImpl - scheduling collection removes/(re)creates/updates
+2008-06-06 21:08:50.516 [4] DEBUG NHibernate.Impl.SessionImpl - Flushed: 0 insertions, 0 updates, 0 deletions to 0 objects
+2008-06-06 21:08:50.516 [4] DEBUG NHibernate.Impl.SessionImpl - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2008-06-06 21:08:50.516 [4] DEBUG NHibernate.Impl.SessionImpl - executing flush
+2008-06-06 21:08:50.516 [4] DEBUG NHibernate.Impl.ConnectionManager - registering flush begin
+2008-06-06 21:08:50.516 [4] DEBUG NHibernate.Impl.ConnectionManager - registering flush end
+2008-06-06 21:08:50.516 [4] DEBUG NHibernate.Impl.SessionImpl - post flush
+2008-06-06 21:08:50.516 [4] DEBUG NHibernate.Impl.SessionImpl - before transaction completion
+2008-06-06 21:08:50.516 [4] DEBUG NHibernate.Impl.ConnectionManager - aggressively releasing database connection
+2008-06-06 21:08:50.516 [4] DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+2008-06-06 21:08:50.516 [4] DEBUG NHibernate.Impl.SessionImpl - transaction completion
+2008-06-06 21:08:50.516 [4] DEBUG NHibernate.Transaction.AdoTransaction - running AdoTransaction.Dispose()
+2008-06-06 21:08:50.516 [4] DEBUG NHibernate.Impl.SessionImpl - closing session
+2008-06-06 21:08:50.516 [4] DEBUG NHibernate.Impl.BatcherImpl - running BatcherImpl.Dispose(true)
+2008-06-06 21:08:50.547 [8] DEBUG NHibernate.Impl.SessionImpl - opened session
+2008-06-06 21:08:50.547 [8] DEBUG NHibernate.Transaction.AdoTransaction - begin
+2008-06-06 21:08:50.547 [8] DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+2008-06-06 21:08:50.563 [8] DEBUG NHibernate.Transaction.AdoTransaction - commit
+2008-06-06 21:08:50.563 [8] DEBUG NHibernate.Impl.SessionImpl - flushing session
+2008-06-06 21:08:50.563 [8] DEBUG NHibernate.Impl.SessionImpl - Flushing entities and processing referenced collections
+2008-06-06 21:08:50.563 [8] DEBUG NHibernate.Impl.SessionImpl - Processing unreferenced collections
+2008-06-06 21:08:50.563 [8] DEBUG NHibernate.Impl.SessionImpl - scheduling collection removes/(re)creates/updates
+2008-06-06 21:08:50.563 [8] DEBUG NHibernate.Impl.SessionImpl - Flushed: 0 insertions, 0 updates, 0 deletions to 0 objects
+2008-06-06 21:08:50.563 [8] DEBUG NHibernate.Impl.SessionImpl - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2008-06-06 21:08:50.563 [8] DEBUG NHibernate.Impl.SessionImpl - executing flush
+2008-06-06 21:08:50.563 [8] DEBUG NHibernate.Impl.ConnectionManager - registering flush begin
+2008-06-06 21:08:50.563 [8] DEBUG NHibernate.Impl.ConnectionManager - registering flush end
+2008-06-06 21:08:50.563 [8] DEBUG NHibernate.Impl.SessionImpl - post flush
+2008-06-06 21:08:50.563 [8] DEBUG NHibernate.Impl.SessionImpl - before transaction completion
+2008-06-06 21:08:50.563 [8] DEBUG NHibernate.Impl.ConnectionManager - aggressively releasing database connection
+2008-06-06 21:08:50.563 [8] DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+2008-06-06 21:08:50.563 [8] DEBUG NHibernate.Impl.SessionImpl - transaction completion
+2008-06-06 21:08:50.563 [8] DEBUG NHibernate.Transaction.AdoTransaction - running AdoTransaction.Dispose()
+2008-06-06 21:08:50.563 [8] DEBUG NHibernate.Impl.SessionImpl - closing session
+2008-06-06 21:08:50.563 [8] DEBUG NHibernate.Impl.BatcherImpl - running BatcherImpl.Dispose(true)
+2008-06-06 21:08:50.766 [8] DEBUG NHibernate.Impl.SessionImpl - opened session
+2008-06-06 21:08:50.781 [4] DEBUG NHibernate.Impl.SessionImpl - opened session
+2008-06-06 21:08:50.781 [8] DEBUG NHibernate.Transaction.AdoTransaction - begin
+2008-06-06 21:08:50.781 [4] DEBUG NHibernate.Transaction.AdoTransaction - begin
+2008-06-06 21:08:50.781 [8] DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+2008-06-06 21:08:50.781 [4] DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+2008-06-06 21:08:50.781 [8] DEBUG NHibernate.Transaction.AdoTransaction - commit
+2008-06-06 21:08:50.781 [8] DEBUG NHibernate.Impl.SessionImpl - flushing session
+2008-06-06 21:08:50.781 [8] DEBUG NHibernate.Impl.SessionImpl - Flushing entities and processing referenced collections
+2008-06-06 21:08:50.781 [8] DEBUG NHibernate.Impl.SessionImpl - Processing unreferenced collections
+2008-06-06 21:08:50.781 [8] DEBUG NHibernate.Impl.SessionImpl - scheduling collection removes/(re)creates/updates
+2008-06-06 21:08:50.781 [8] DEBUG NHibernate.Impl.SessionImpl - Flushed: 0 insertions, 0 updates, 0 deletions to 0 objects
+2008-06-06 21:08:50.781 [8] DEBUG NHibernate.Impl.SessionImpl - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2008-06-06 21:08:50.781 [8] DEBUG NHibernate.Impl.SessionImpl - executing flush
+2008-06-06 21:08:50.781 [8] DEBUG NHibernate.Impl.ConnectionManager - registering flush begin
+2008-06-06 21:08:50.781 [8] DEBUG NHibernate.Impl.ConnectionManager - registering flush end
+2008-06-06 21:08:50.781 [8] DEBUG NHibernate.Impl.SessionImpl - post flush
+2008-06-06 21:08:50.781 [8] DEBUG NHibernate.Impl.SessionImpl - before transaction completion
+2008-06-06 21:08:50.797 [8] DEBUG NHibernate.Impl.ConnectionManager - aggressively releasing database connection
+2008-06-06 21:08:50.797 [8] DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+2008-06-06 21:08:50.797 [8] DEBUG NHibernate.Impl.SessionImpl - transaction completion
+2008-06-06 21:08:50.797 [8] DEBUG NHibernate.Transaction.AdoTransaction - running AdoTransaction.Dispose()
+2008-06-06 21:08:50.797 [4] DEBUG NHibernate.Transaction.AdoTransaction - commit
+2008-06-06 21:08:50.797 [8] DEBUG NHibernate.Impl.SessionImpl - closing session
+2008-06-06 21:08:50.797 [4] DEBUG NHibernate.Impl.SessionImpl - flushing session
+2008-06-06 21:08:50.797 [8] DEBUG NHibernate.Impl.BatcherImpl - running BatcherImpl.Dispose(true)
+2008-06-06 21:08:50.797 [4] DEBUG NHibernate.Impl.SessionImpl - Flushing entities and processing referenced collections
+2008-06-06 21:08:50.797 [4] DEBUG NHibernate.Impl.SessionImpl - Processing unreferenced collections
+2008-06-06 21:08:50.797 [4] DEBUG NHibernate.Impl.SessionImpl - scheduling collection removes/(re)creates/updates
+2008-06-06 21:08:50.797 [4] DEBUG NHibernate.Impl.SessionImpl - Flushed: 0 insertions, 0 updates, 0 deletions to 0 objects
+2008-06-06 21:08:50.797 [4] DEBUG NHibernate.Impl.SessionImpl - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2008-06-06 21:08:50.797 [4] DEBUG NHibernate.Impl.SessionImpl - executing flush
+2008-06-06 21:08:50.797 [4] DEBUG NHibernate.Impl.ConnectionManager - registering flush begin
+2008-06-06 21:08:50.797 [4] DEBUG NHibernate.Impl.ConnectionManager - registering flush end
+2008-06-06 21:08:50.812 [4] DEBUG NHibernate.Impl.SessionImpl - post flush
+2008-06-06 21:08:50.812 [4] DEBUG NHibernate.Impl.SessionImpl - before transaction completion
+2008-06-06 21:08:50.828 [4] DEBUG NHibernate.Impl.ConnectionManager - aggressively releasing database connection
+2008-06-06 21:08:50.828 [4] DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+2008-06-06 21:08:50.844 [4] DEBUG NHibernate.Impl.SessionImpl - transaction completion
+2008-06-06 21:08:50.844 [4] DEBUG NHibernate.Transaction.AdoTransaction - running AdoTransaction.Dispose()
+2008-06-06 21:08:50.844 [4] DEBUG NHibernate.Impl.SessionImpl - closing session
+2008-06-06 21:08:50.844 [4] DEBUG NHibernate.Impl.BatcherImpl - running BatcherImpl.Dispose(true)
+2008-06-06 21:08:50.968 [8] DEBUG NHibernate.Impl.SessionImpl - opened session
+2008-06-06 21:08:50.968 [8] DEBUG NHibernate.Transaction.AdoTransaction - begin
+2008-06-06 21:08:50.968 [8] DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+2008-06-06 21:08:50.968 [4] DEBUG NHibernate.Impl.SessionImpl - opened session
+2008-06-06 21:08:50.968 [4] DEBUG NHibernate.Transaction.AdoTransaction - begin
+2008-06-06 21:08:50.984 [4] DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+2008-06-06 21:08:50.984 [8] DEBUG NHibernate.Transaction.AdoTransaction - commit
+2008-06-06 21:08:50.984 [8] DEBUG NHibernate.Impl.SessionImpl - flushing session
+2008-06-06 21:08:50.984 [8] DEBUG NHibernate.Impl.SessionImpl - Flushing entities and processing referenced collections
+2008-06-06 21:08:50.984 [8] DEBUG NHibernate.Impl.SessionImpl - Processing unreferenced collections
+2008-06-06 21:08:50.984 [8] DEBUG NHibernate.Impl.SessionImpl - scheduling collection removes/(re)creates/updates
+2008-06-06 21:08:50.984 [8] DEBUG NHibernate.Impl.SessionImpl - Flushed: 0 insertions, 0 updates, 0 deletions to 0 objects
+2008-06-06 21:08:50.984 [8] DEBUG NHibernate.Impl.SessionImpl - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2008-06-06 21:08:50.984 [8] DEBUG NHibernate.Impl.SessionImpl - executing flush
+2008-06-06 21:08:50.984 [8] DEBUG NHibernate.Impl.ConnectionManager - registering flush begin
+2008-06-06 21:08:50.984 [8] DEBUG NHibernate.Impl.ConnectionManager - registering flush end
+2008-06-06 21:08:50.984 [8] DEBUG NHibernate.Impl.SessionImpl - post flush
+2008-06-06 21:08:50.984 [8] DEBUG NHibernate.Impl.SessionImpl - before transaction completion
+2008-06-06 21:08:50.984 [8] DEBUG NHibernate.Impl.ConnectionManager - aggressively releasing database connection
+2008-06-06 21:08:50.984 [8] DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+2008-06-06 21:08:51.000 [8] DEBUG NHibernate.Impl.SessionImpl - transaction completion
+2008-06-06 21:08:51.000 [8] DEBUG NHibernate.Transaction.AdoTransaction - running AdoTransaction.Dispose()
+2008-06-06 21:08:51.000 [8] DEBUG NHibernate.Impl.SessionImpl - closing session
+2008-06-06 21:08:51.000 [8] DEBUG NHibernate.Impl.BatcherImpl - running BatcherImpl.Dispose(true)
+2008-06-06 21:08:51.015 [4] DEBUG NHibernate.Transaction.AdoTransaction - commit
+2008-06-06 21:08:51.015 [4] DEBUG NHibernate.Impl.SessionImpl - flushing session
+2008-06-06 21:08:51.015 [4] DEBUG NHibernate.Impl.SessionImpl - Flushing entities and processing referenced collections
+2008-06-06 21:08:51.015 [4] DEBUG NHibernate.Impl.SessionImpl - Processing unreferenced collections
+2008-06-06 21:08:51.015 [4] DEBUG NHibernate.Impl.SessionImpl - scheduling collection removes/(re)creates/updates
+2008-06-06 21:08:51.015 [4] DEBUG NHibernate.Impl.SessionImpl - Flushed: 0 insertions, 0 updates, 0 deletions to 0 objects
+2008-06-06 21:08:51.015 [4] DEBUG NHibernate.Impl.SessionImpl - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2008-06-06 21:08:51.015 [4] DEBUG NHibernate.Impl.SessionImpl - executing flush
+2008-06-06 21:08:51.015 [4] DEBUG NHibernate.Impl.ConnectionManager - registering flush begin
+2008-06-06 21:08:51.015 [4] DEBUG NHibernate.Impl.ConnectionManager - registering flush end
+2008-06-06 21:08:51.031 [4] DEBUG NHibernate.Impl.SessionImpl - post flush
+2008-06-06 21:08:51.031 [4] DEBUG NHibernate.Impl.SessionImpl - before transaction completion
+2008-06-06 21:08:51.031 [4] DEBUG NHibernate.Impl.ConnectionManager - aggressively releasing database connection
+2008-06-06 21:08:51.031 [4] DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+2008-06-06 21:08:51.031 [4] DEBUG NHibernate.Impl.SessionImpl - transaction completion
+2008-06-06 21:08:51.031 [4] DEBUG NHibernate.Transaction.AdoTransaction - running AdoTransaction.Dispose()
+2008-06-06 21:08:51.031 [4] DEBUG NHibernate.Impl.SessionImpl - closing session
+2008-06-06 21:08:51.031 [4] DEBUG NHibernate.Impl.BatcherImpl - running BatcherImpl.Dispose(true)
+2008-06-06 21:08:51.031 [8] DEBUG NHibernate.Impl.SessionImpl - opened session
+2008-06-06 21:08:51.046 [8] DEBUG NHibernate.Transaction.AdoTransaction - begin
+2008-06-06 21:08:51.046 [8] DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+2008-06-06 21:08:51.062 [8] DEBUG NHibernate.Transaction.AdoTransaction - commit
+2008-06-06 21:08:51.062 [8] DEBUG NHibernate.Impl.SessionImpl - flushing session
+2008-06-06 21:08:51.062 [8] DEBUG NHibernate.Impl.SessionImpl - Flushing entities and processing referenced collections
+2008-06-06 21:08:51.062 [8] DEBUG NHibernate.Impl.SessionImpl - Processing unreferenced collections
+2008-06-06 21:08:51.062 [8] DEBUG NHibernate.Impl.SessionImpl - scheduling collection removes/(re)creates/updates
+2008-06-06 21:08:51.078 [8] DEBUG NHibernate.Impl.SessionImpl - Flushed: 0 insertions, 0 updates, 0 deletions to 0 objects
+2008-06-06 21:08:51.078 [8] DEBUG NHibernate.Impl.SessionImpl - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2008-06-06 21:08:51.078 [8] DEBUG NHibernate.Impl.SessionImpl - executing flush
+2008-06-06 21:08:51.078 [8] DEBUG NHibernate.Impl.ConnectionManager - registering flush begin
+2008-06-06 21:08:51.078 [8] DEBUG NHibernate.Impl.ConnectionManager - registering flush end
+2008-06-06 21:08:51.078 [8] DEBUG NHibernate.Impl.SessionImpl - post flush
+2008-06-06 21:08:51.078 [8] DEBUG NHibernate.Impl.SessionImpl - before transaction completion
+2008-06-06 21:08:51.093 [8] DEBUG NHibernate.Impl.ConnectionManager - aggressively releasing database connection
+2008-06-06 21:08:51.093 [8] DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+2008-06-06 21:08:51.093 [8] DEBUG NHibernate.Impl.SessionImpl - transaction completion
+2008-06-06 21:08:51.093 [8] DEBUG NHibernate.Transaction.AdoTransaction - running AdoTransaction.Dispose()
+2008-06-06 21:08:51.093 [8] DEBUG NHibernate.Impl.SessionImpl - closing session
+2008-06-06 21:08:51.093 [8] DEBUG NHibernate.Impl.BatcherImpl - running BatcherImpl.Dispose(true)
+2008-06-06 21:08:51.140 [4] DEBUG NHibernate.Impl.SessionImpl - opened session
+2008-06-06 21:08:51.140 [4] DEBUG NHibernate.Transaction.AdoTransaction - begin
+2008-06-06 21:08:51.140 [4] DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+2008-06-06 21:08:51.156 [8] DEBUG NHibernate.Impl.SessionImpl - opened session
+2008-06-06 21:08:51.156 [8] DEBUG NHibernate.Transaction.AdoTransaction - begin
+2008-06-06 21:08:51.156 [8] DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+2008-06-06 21:08:51.171 [4] DEBUG NHibernate.Transaction.AdoTransaction - commit
+2008-06-06 21:08:51.171 [4] DEBUG NHibernate.Impl.SessionImpl - flushing session
+2008-06-06 21:08:51.171 [4] DEBUG NHibernate.Impl.SessionImpl - Flushing entities and processing referenced collections
+2008-06-06 21:08:51.171 [4] DEBUG NHibernate.Impl.SessionImpl - Processing unreferenced collections
+2008-06-06 21:08:51.171 [4] DEBUG NHibernate.Impl.SessionImpl - scheduling collection removes/(re)creates/updates
+2008-06-06 21:08:51.171 [4] DEBUG NHibernate.Impl.SessionImpl - Flushed: 0 insertions, 0 updates, 0 deletions to 0 objects
+2008-06-06 21:08:51.171 [4] DEBUG NHibernate.Impl.SessionImpl - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2008-06-06 21:08:51.171 [4] DEBUG NHibernate.Impl.SessionImpl - executing flush
+2008-06-06 21:08:51.171 [4] DEBUG NHibernate.Impl.ConnectionManager - registering flush begin
+2008-06-06 21:08:51.171 [4] DEBUG NHibernate.Impl.ConnectionManager - registering flush end
+2008-06-06 21:08:51.171 [4] DEBUG NHibernate.Impl.SessionImpl - post flush
+2008-06-06 21:08:51.171 [4] DEBUG NHibernate.Impl.SessionImpl - before transaction completion
+2008-06-06 21:08:51.171 [8] DEBUG NHibernate.Transaction.AdoTransaction - commit
+2008-06-06 21:08:51.171 [8] DEBUG NHibernate.Impl.SessionImpl - flushing session
+2008-06-06 21:08:51.171 [8] DEBUG NHibernate.Impl.SessionImpl - Flushing entities and processing referenced collections
+2008-06-06 21:08:51.171 [8] DEBUG NHibernate.Impl.SessionImpl - Processing unreferenced collections
+2008-06-06 21:08:51.171 [8] DEBUG NHibernate.Impl.SessionImpl - scheduling collection removes/(re)creates/updates
+2008-06-06 21:08:51.171 [8] DEBUG NHibernate.Impl.SessionImpl - Flushed: 0 insertions, 0 updates, 0 deletions to 0 objects
+2008-06-06 21:08:51.171 [8] DEBUG NHibernate.Impl.SessionImpl - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2008-06-06 21:08:51.171 [8] DEBUG NHibernate.Impl.SessionImpl - executing flush
+2008-06-06 21:08:51.171 [8] DEBUG NHibernate.Impl.ConnectionManager - registering flush begin
+2008-06-06 21:08:51.171 [8] DEBUG NHibernate.Impl.ConnectionManager - registering flush end
+2008-06-06 21:08:51.171 [8] DEBUG NHibernate.Impl.SessionImpl - post flush
+2008-06-06 21:08:51.171 [8] DEBUG NHibernate.Impl.SessionImpl - before transaction completion
+2008-06-06 21:08:51.171 [4] DEBUG NHibernate.Impl.ConnectionManager - aggressively releasing database connection
+2008-06-06 21:08:51.171 [8] DEBUG NHibernate.Impl.ConnectionManager - aggressively releasing database connection
+2008-06-06 21:08:51.187 [8] DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+2008-06-06 21:08:51.187 [4] DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+2008-06-06 21:08:51.187 [8] DEBUG NHibernate.Impl.SessionImpl - transaction completion
+2008-06-06 21:08:51.187 [8] DEBUG NHibernate.Transaction.AdoTransaction - running AdoTransaction.Dispose()
+2008-06-06 21:08:51.187 [8] DEBUG NHibernate.Impl.SessionImpl - closing session
+2008-06-06 21:08:51.187 [8] DEBUG NHibernate.Impl.BatcherImpl - running BatcherImpl.Dispose(true)
+2008-06-06 21:08:51.202 [4] DEBUG NHibernate.Impl.SessionImpl - transaction completion
+2008-06-06 21:08:51.202 [4] DEBUG NHibernate.Transaction.AdoTransaction - running AdoTransaction.Dispose()
+2008-06-06 21:08:51.218 [4] DEBUG NHibernate.Impl.SessionImpl - closing session
+2008-06-06 21:08:51.218 [4] DEBUG NHibernate.Impl.BatcherImpl - running BatcherImpl.Dispose(true)
+2008-06-06 21:08:51.218 [8] DEBUG NHibernate.Impl.SessionImpl - opened session
+2008-06-06 21:08:51.218 [8] DEBUG NHibernate.Transaction.AdoTransaction - begin
+2008-06-06 21:08:51.218 [8] DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+2008-06-06 21:08:51.234 [8] DEBUG NHibernate.Transaction.AdoTransaction - commit
+2008-06-06 21:08:51.234 [8] DEBUG NHibernate.Impl.SessionImpl - flushing session
+2008-06-06 21:08:51.234 [8] DEBUG NHibernate.Impl.SessionImpl - Flushing entities and processing referenced collections
+2008-06-06 21:08:51.234 [8] DEBUG NHibernate.Impl.SessionImpl - Processing unreferenced collections
+2008-06-06 21:08:51.249 [8] DEBUG NHibernate.Impl.SessionImpl - scheduling collection removes/(re)creates/updates
+2008-06-06 21:08:51.249 [8] DEBUG NHibernate.Impl.SessionImpl - Flushed: 0 insertions, 0 updates, 0 deletions to 0 objects
+2008-06-06 21:08:51.249 [8] DEBUG NHibernate.Impl.SessionImpl - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2008-06-06 21:08:51.249 [8] DEBUG NHibernate.Impl.SessionImpl - executing flush
+2008-06-06 21:08:51.249 [8] DEBUG NHibernate.Impl.ConnectionManager - registering flush begin
+2008-06-06 21:08:51.249 [8] DEBUG NHibernate.Impl.ConnectionManager - registering flush end
+2008-06-06 21:08:51.249 [8] DEBUG NHibernate.Impl.SessionImpl - post flush
+2008-06-06 21:08:51.249 [8] DEBUG NHibernate.Impl.SessionImpl - before transaction completion
+2008-06-06 21:08:51.249 [8] DEBUG NHibernate.Impl.ConnectionManager - aggressively releasing database connection
+2008-06-06 21:08:51.249 [8] DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+2008-06-06 21:08:51.265 [8] DEBUG NHibernate.Impl.SessionImpl - transaction completion
+2008-06-06 21:08:51.265 [8] DEBUG NHibernate.Transaction.AdoTransaction - running AdoTransaction.Dispose()
+2008-06-06 21:08:51.265 [8] DEBUG NHibernate.Impl.SessionImpl - closing session
+2008-06-06 21:08:51.265 [8] DEBUG NHibernate.Impl.BatcherImpl - running BatcherImpl.Dispose(true)
+2008-06-06 21:08:51.265 [4] DEBUG NHibernate.Impl.SessionImpl - opened session
+2008-06-06 21:08:51.265 [4] DEBUG NHibernate.Transaction.AdoTransaction - begin
+2008-06-06 21:08:51.265 [4] DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+2008-06-06 21:08:51.280 [4] DEBUG NHibernate.Transaction.AdoTransaction - commit
+2008-06-06 21:08:51.280 [4] DEBUG NHibernate.Impl.SessionImpl - flushing session
+2008-06-06 21:08:51.280 [4] DEBUG NHibernate.Impl.SessionImpl - Flushing entities and processing referenced collections
+2008-06-06 21:08:51.280 [4] DEBUG NHibernate.Impl.SessionImpl - Processing unreferenced collections
+2008-06-06 21:08:51.280 [4] DEBUG NHibernate.Impl.SessionImpl - scheduling collection removes/(re)creates/updates
+2008-06-06 21:08:51.280 [4] DEBUG NHibernate.Impl.SessionImpl - Flushed: 0 insertions, 0 updates, 0 deletions to 0 objects
+2008-06-06 21:08:51.280 [4] DEBUG NHibernate.Impl.SessionImpl - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2008-06-06 21:08:51.280 [4] DEBUG NHibernate.Impl.SessionImpl - executing flush
+2008-06-06 21:08:51.280 [4] DEBUG NHibernate.Impl.ConnectionManager - registering flush begin
+2008-06-06 21:08:51.280 [4] DEBUG NHibernate.Impl.ConnectionManager - registering flush end
+2008-06-06 21:08:51.280 [4] DEBUG NHibernate.Impl.SessionImpl - post flush
+2008-06-06 21:08:51.280 [4] DEBUG NHibernate.Impl.SessionImpl - before transaction completion
+2008-06-06 21:08:51.296 [4] DEBUG NHibernate.Impl.ConnectionManager - aggressively releasing database connection
+2008-06-06 21:08:51.296 [4] DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+2008-06-06 21:08:51.296 [4] DEBUG NHibernate.Impl.SessionImpl - transaction completion
+2008-06-06 21:08:51.296 [4] DEBUG NHibernate.Transaction.AdoTransaction - running AdoTransaction.Dispose()
+2008-06-06 21:08:51.296 [4] DEBUG NHibernate.Impl.SessionImpl - closing session
+2008-06-06 21:08:51.296 [4] DEBUG NHibernate.Impl.BatcherImpl - running BatcherImpl.Dispose(true)
+2008-06-06 21:08:51.312 [8] DEBUG NHibernate.Impl.SessionImpl - opened session
+2008-06-06 21:08:51.312 [8] DEBUG NHibernate.Transaction.AdoTransaction - begin
+2008-06-06 21:08:51.312 [8] DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+2008-06-06 21:08:51.312 [8] DEBUG NHibernate.Transaction.AdoTransaction - commit
+2008-06-06 21:08:51.312 [8] DEBUG NHibernate.Impl.SessionImpl - flushing session
+2008-06-06 21:08:51.312 [8] DEBUG NHibernate.Impl.SessionImpl - Flushing entities and processing referenced collections
+2008-06-06 21:08:51.312 [8] DEBUG NHibernate.Impl.SessionImpl - Processing unreferenced collections
+2008-06-06 21:08:51.312 [8] DEBUG NHibernate.Impl.SessionImpl - scheduling collection removes/(re)creates/updates
+2008-06-06 21:08:51.327 [8] DEBUG NHibernate.Impl.SessionImpl - Flushed: 0 insertions, 0 updates, 0 deletions to 0 objects
+2008-06-06 21:08:51.327 [8] DEBUG NHibernate.Impl.SessionImpl - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2008-06-06 21:08:51.327 [8] DEBUG NHibernate.Impl.SessionImpl - executing flush
+2008-06-06 21:08:51.327 [8] DEBUG NHibernate.Impl.ConnectionManager - registering flush begin
+2008-06-06 21:08:51.327 [8] DEBUG NHibernate.Impl.ConnectionManager - registering flush end
+2008-06-06 21:08:51.327 [8] DEBUG NHibernate.Impl.SessionImpl - post flush
+2008-06-06 21:08:51.327 [8] DEBUG NHibernate.Impl.SessionImpl - before transaction completion
+2008-06-06 21:08:51.327 [8] DEBUG NHibernate.Impl.ConnectionManager - aggressively releasing database connection
+2008-06-06 21:08:51.327 [8] DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+2008-06-06 21:08:51.327 [8] DEBUG NHibernate.Impl.SessionImpl - transaction completion
+2008-06-06 21:08:51.327 [8] DEBUG NHibernate.Transaction.AdoTransaction - running AdoTransaction.Dispose()
+2008-06-06 21:08:51.327 [8] DEBUG NHibernate.Impl.SessionImpl - closing session
+2008-06-06 21:08:51.327 [8] DEBUG NHibernate.Impl.BatcherImpl - running BatcherImpl.Dispose(true)
+2008-06-06 21:08:51.343 [4] DEBUG NHibernate.Impl.SessionImpl - opened session
+2008-06-06 21:08:51.343 [4] DEBUG NHibernate.Transaction.AdoTransaction - begin
+2008-06-06 21:08:51.343 [4] DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+2008-06-06 21:08:51.343 [4] DEBUG NHibernate.Transaction.AdoTransaction - commit
+2008-06-06 21:08:51.343 [4] DEBUG NHibernate.Impl.SessionImpl - flushing session
+2008-06-06 21:08:51.343 [4] DEBUG NHibernate.Impl.SessionImpl - Flushing entities and processing referenced collections
+2008-06-06 21:08:51.343 [4] DEBUG NHibernate.Impl.SessionImpl - Processing unreferenced collections
+2008-06-06 21:08:51.343 [4] DEBUG NHibernate.Impl.SessionImpl - scheduling collection removes/(re)creates/updates
+2008-06-06 21:08:51.343 [4] DEBUG NHibernate.Impl.SessionImpl - Flushed: 0 insertions, 0 updates, 0 deletions to 0 objects
+2008-06-06 21:08:51.343 [4] DEBUG NHibernate.Impl.SessionImpl - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2008-06-06 21:08:51.343 [4] DEBUG NHibernate.Impl.SessionImpl - executing flush
+2008-06-06 21:08:51.343 [4] DEBUG NHibernate.Impl.ConnectionManager - registering flush begin
+2008-06-06 21:08:51.343 [4] DEBUG NHibernate.Impl.ConnectionManager - registering flush end
+2008-06-06 21:08:51.343 [4] DEBUG NHibernate.Impl.SessionImpl - post flush
+2008-06-06 21:08:51.343 [4] DEBUG NHibernate.Impl.SessionImpl - before transaction completion
+2008-06-06 21:08:51.358 [4] DEBUG NHibernate.Impl.ConnectionManager - aggressively releasing database connection
+2008-06-06 21:08:51.358 [4] DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+2008-06-06 21:08:51.358 [4] DEBUG NHibernate.Impl.SessionImpl - transaction completion
+2008-06-06 21:08:51.358 [4] DEBUG NHibernate.Transaction.AdoTransaction - running AdoTransaction.Dispose()
+2008-06-06 21:08:51.358 [4] DEBUG NHibernate.Impl.SessionImpl - closing session
+2008-06-06 21:08:51.358 [4] DEBUG NHibernate.Impl.BatcherImpl - running BatcherImpl.Dispose(true)
+2008-06-06 21:08:51.374 [4] DEBUG NHibernate.Impl.SessionImpl - opened session
+2008-06-06 21:08:51.374 [4] DEBUG NHibernate.Transaction.AdoTransaction - begin
+2008-06-06 21:08:51.374 [4] DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+2008-06-06 21:08:51.374 [4] DEBUG NHibernate.Transaction.AdoTransaction - commit
+2008-06-06 21:08:51.374 [4] DEBUG NHibernate.Impl.SessionImpl - flushing session
+2008-06-06 21:08:51.374 [4] DEBUG NHibernate.Impl.SessionImpl - Flushing entities and processing referenced collections
+2008-06-06 21:08:51.374 [4] DEBUG NHibernate.Impl.SessionImpl - Processing unreferenced collections
+2008-06-06 21:08:51.374 [4] DEBUG NHibernate.Impl.SessionImpl - scheduling collection removes/(re)creates/updates
+2008-06-06 21:08:51.374 [4] DEBUG NHibernate.Impl.SessionImpl - Flushed: 0 insertions, 0 updates, 0 deletions to 0 objects
+2008-06-06 21:08:51.374 [4] DEBUG NHibernate.Impl.SessionImpl - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2008-06-06 21:08:51.374 [4] DEBUG NHibernate.Impl.SessionImpl - executing flush
+2008-06-06 21:08:51.390 [4] DEBUG NHibernate.Impl.ConnectionManager - registering flush begin
+2008-06-06 21:08:51.390 [4] DEBUG NHibernate.Impl.ConnectionManager - registering flush end
+2008-06-06 21:08:51.390 [4] DEBUG NHibernate.Impl.SessionImpl - post flush
+2008-06-06 21:08:51.390 [4] DEBUG NHibernate.Impl.SessionImpl - before transaction completion
+2008-06-06 21:08:51.390 [4] DEBUG NHibernate.Impl.ConnectionManager - aggressively releasing database connection
+2008-06-06 21:08:51.390 [4] DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+2008-06-06 21:08:51.390 [4] DEBUG NHibernate.Impl.SessionImpl - transaction completion
+2008-06-06 21:08:51.390 [4] DEBUG NHibernate.Transaction.AdoTransaction - running AdoTransaction.Dispose()
+2008-06-06 21:08:51.390 [4] DEBUG NHibernate.Impl.SessionImpl - closing session
+2008-06-06 21:08:51.390 [4] DEBUG NHibernate.Impl.BatcherImpl - running BatcherImpl.Dispose(true)
+2008-06-06 21:08:51.390 [8] DEBUG NHibernate.Impl.SessionImpl - opened session
+2008-06-06 21:08:51.390 [8] DEBUG NHibernate.Transaction.AdoTransaction - begin
+2008-06-06 21:08:51.390 [8] DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+2008-06-06 21:08:51.405 [8] DEBUG NHibernate.Transaction.AdoTransaction - commit
+2008-06-06 21:08:51.405 [8] DEBUG NHibernate.Impl.SessionImpl - flushing session
+2008-06-06 21:08:51.405 [8] DEBUG NHibernate.Impl.SessionImpl - Flushing entities and processing referenced collections
+2008-06-06 21:08:51.405 [8] DEBUG NHibernate.Impl.SessionImpl - Processing unreferenced collections
+2008-06-06 21:08:51.405 [8] DEBUG NHibernate.Impl.SessionImpl - scheduling collection removes/(re)creates/updates
+2008-06-06 21:08:51.405 [8] DEBUG NHibernate.Impl.SessionImpl - Flushed: 0 insertions, 0 updates, 0 deletions to 0 objects
+2008-06-06 21:08:51.405 [8] DEBUG NHibernate.Impl.SessionImpl - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2008-06-06 21:08:51.405 [8] DEBUG NHibernate.Impl.SessionImpl - executing flush
+2008-06-06 21:08:51.405 [8] DEBUG NHibernate.Impl.ConnectionManager - registering flush begin
+2008-06-06 21:08:51.405 [8] DEBUG NHibernate.Impl.ConnectionManager - registering flush end
+2008-06-06 21:08:51.405 [8] DEBUG NHibernate.Impl.SessionImpl - post flush
+2008-06-06 21:08:51.405 [8] DEBUG NHibernate.Impl.SessionImpl - before transaction completion
+2008-06-06 21:08:51.421 [8] DEBUG NHibernate.Impl.ConnectionManager - aggressively releasing database connection
+2008-06-06 21:08:51.421 [8] DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+2008-06-06 21:08:51.421 [8] DEBUG NHibernate.Impl.SessionImpl - transaction completion
+2008-06-06 21:08:51.421 [8] DEBUG NHibernate.Transaction.AdoTransaction - running AdoTransaction.Dispose()
+2008-06-06 21:08:51.421 [8] DEBUG NHibernate.Impl.SessionImpl - closing session
+2008-06-06 21:08:51.421 [8] DEBUG NHibernate.Impl.BatcherImpl - running BatcherImpl.Dispose(true)
+2008-06-06 21:08:51.436 [4] DEBUG NHibernate.Impl.SessionImpl - opened session
+2008-06-06 21:08:51.436 [4] DEBUG NHibernate.Transaction.AdoTransaction - begin
+2008-06-06 21:08:51.436 [4] DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+2008-06-06 21:08:51.436 [4] DEBUG NHibernate.Transaction.AdoTransaction - commit
+2008-06-06 21:08:51.436 [4] DEBUG NHibernate.Impl.SessionImpl - flushing session
+2008-06-06 21:08:51.436 [4] DEBUG NHibernate.Impl.SessionImpl - Flushing entities and processing referenced collections
+2008-06-06 21:08:51.436 [4] DEBUG NHibernate.Impl.SessionImpl - Processing unreferenced collections
+2008-06-06 21:08:51.436 [4] DEBUG NHibernate.Impl.SessionImpl - scheduling collection removes/(re)creates/updates
+2008-06-06 21:08:51.436 [4] DEBUG NHibernate.Impl.SessionImpl - Flushed: 0 insertions, 0 updates, 0 deletions to 0 objects
+2008-06-06 21:08:51.436 [4] DEBUG NHibernate.Impl.SessionImpl - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2008-06-06 21:08:51.436 [4] DEBUG NHibernate.Impl.SessionImpl - executing flush
+2008-06-06 21:08:51.452 [4] DEBUG NHibernate.Impl.ConnectionManager - registering flush begin
+2008-06-06 21:08:51.452 [4] DEBUG NHibernate.Impl.ConnectionManager - registering flush end
+2008-06-06 21:08:51.452 [4] DEBUG NHibernate.Impl.SessionImpl - post flush
+2008-06-06 21:08:51.452 [4] DEBUG NHibernate.Impl.SessionImpl - before transaction completion
+2008-06-06 21:08:51.452 [4] DEBUG NHibernate.Impl.ConnectionManager - aggressively releasing database connection
+2008-06-06 21:08:51.452 [4] DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+2008-06-06 21:08:51.452 [4] DEBUG NHibernate.Impl.SessionImpl - transaction completion
+2008-06-06 21:08:51.452 [4] DEBUG NHibernate.Transaction.AdoTransaction - running AdoTransaction.Dispose()
+2008-06-06 21:08:51.452 [4] DEBUG NHibernate.Impl.SessionImpl - closing session
+2008-06-06 21:08:51.452 [4] DEBUG NHibernate.Impl.BatcherImpl - running BatcherImpl.Dispose(true)
+2008-06-06 21:08:51.468 [8] DEBUG NHibernate.Impl.SessionImpl - opened session
+2008-06-06 21:08:51.468 [8] DEBUG NHibernate.Transaction.AdoTransaction - begin
+2008-06-06 21:08:51.468 [8] DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+2008-06-06 21:08:51.483 [8] DEBUG NHibernate.Transaction.AdoTransaction - commit
+2008-06-06 21:08:51.483 [8] DEBUG NHibernate.Impl.SessionImpl - flushing session
+2008-06-06 21:08:51.483 [8] DEBUG NHibernate.Impl.SessionImpl - Flushing entities and processing referenced collections
+2008-06-06 21:08:51.483 [8] DEBUG NHibernate.Impl.SessionImpl - Processing unreferenced collections
+2008-06-06 21:08:51.483 [8] DEBUG NHibernate.Impl.SessionImpl - scheduling collection removes/(re)creates/updates
+2008-06-06 21:08:51.483 [8] DEBUG NHibernate.Impl.SessionImpl - Flushed: 0 insertions, 0 updates, 0 deletions to 0 objects
+2008-06-06 21:08:51.483 [8] DEBUG NHibernate.Impl.SessionImpl - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2008-06-06 21:08:51.483 [8] DEBUG NHibernate.Impl.SessionImpl - executing flush
+2008-06-06 21:08:51.483 [8] DEBUG NHibernate.Impl.ConnectionManager - registering flush begin
+2008-06-06 21:08:51.483 [8] DEBUG NHibernate.Impl.ConnectionManager - registering flush end
+2008-06-06 21:08:51.483 [8] DEBUG NHibernate.Impl.SessionImpl - post flush
+2008-06-06 21:08:51.483 [8] DEBUG NHibernate.Impl.SessionImpl - before transaction completion
+2008-06-06 21:08:51.483 [8] DEBUG NHibernate.Impl.ConnectionManager - aggressively releasing database connection
+2008-06-06 21:08:51.483 [8] DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+2008-06-06 21:08:51.483 [8] DEBUG NHibernate.Impl.SessionImpl - transaction completion
+2008-06-06 21:08:51.483 [8] DEBUG NHibernate.Transaction.AdoTransaction - running AdoTransaction.Dispose()
+2008-06-06 21:08:51.483 [8] DEBUG NHibernate.Impl.SessionImpl - closing session
+2008-06-06 21:08:51.483 [8] DEBUG NHibernate.Impl.BatcherImpl - running BatcherImpl.Dispose(true)
+2008-06-06 21:08:51.483 [4] DEBUG NHibernate.Impl.SessionImpl - opened session
+2008-06-06 21:08:51.483 [4] DEBUG NHibernate.Transaction.AdoTransaction - begin
+2008-06-06 21:08:51.499 [4] DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+2008-06-06 21:08:51.514 [4] DEBUG NHibernate.Transaction.AdoTransaction - commit
+2008-06-06 21:08:51.514 [4] DEBUG NHibernate.Impl.SessionImpl - flushing session
+2008-06-06 21:08:51.514 [4] DEBUG NHibernate.Impl.SessionImpl - Flushing entities and processing referenced collections
+2008-06-06 21:08:51.514 [4] DEBUG NHibernate.Impl.SessionImpl - Processing unreferenced collections
+2008-06-06 21:08:51.514 [4] DEBUG NHibernate.Impl.SessionImpl - scheduling collection removes/(re)creates/updates
+2008-06-06 21:08:51.514 [4] DEBUG NHibernate.Impl.SessionImpl - Flushed: 0 insertions, 0 updates, 0 deletions to 0 objects
+2008-06-06 21:08:51.514 [4] DEBUG NHibernate.Impl.SessionImpl - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2008-06-06 21:08:51.514 [4] DEBUG NHibernate.Impl.SessionImpl - executing flush
+2008-06-06 21:08:51.514 [4] DEBUG NHibernate.Impl.ConnectionManager - registering flush begin
+2008-06-06 21:08:51.514 [4] DEBUG NHibernate.Impl.ConnectionManager - registering flush end
+2008-06-06 21:08:51.514 [4] DEBUG NHibernate.Impl.SessionImpl - post flush
+2008-06-06 21:08:51.514 [4] DEBUG NHibernate.Impl.SessionImpl - before transaction completion
+2008-06-06 21:08:51.514 [4] DEBUG NHibernate.Impl.ConnectionManager - aggressively releasing database connection
+2008-06-06 21:08:51.514 [4] DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+2008-06-06 21:08:51.530 [8] DEBUG NHibernate.Impl.SessionImpl - opened session
+2008-06-06 21:08:51.530 [8] DEBUG NHibernate.Transaction.AdoTransaction - begin
+2008-06-06 21:08:51.530 [8] DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+2008-06-06 21:08:51.530 [4] DEBUG NHibernate.Impl.SessionImpl - transaction completion
+2008-06-06 21:08:51.530 [4] DEBUG NHibernate.Transaction.AdoTransaction - running AdoTransaction.Dispose()
+2008-06-06 21:08:51.530 [4] DEBUG NHibernate.Impl.SessionImpl - closing session
+2008-06-06 21:08:51.530 [4] DEBUG NHibernate.Impl.BatcherImpl - running BatcherImpl.Dispose(true)
+2008-06-06 21:08:51.561 [8] DEBUG NHibernate.Transaction.AdoTransaction - commit
+2008-06-06 21:08:51.561 [8] DEBUG NHibernate.Impl.SessionImpl - flushing session
+2008-06-06 21:08:51.561 [8] DEBUG NHibernate.Impl.SessionImpl - Flushing entities and processing referenced collections
+2008-06-06 21:08:51.561 [8] DEBUG NHibernate.Impl.SessionImpl - Processing unreferenced collections
+2008-06-06 21:08:51.561 [8] DEBUG NHibernate.Impl.SessionImpl - scheduling collection removes/(re)creates/updates
+2008-06-06 21:08:51.561 [8] DEBUG NHibernate.Impl.SessionImpl - Flushed: 0 insertions, 0 updates, 0 deletions to 0 objects
+2008-06-06 21:08:51.561 [8] DEBUG NHibernate.Impl.SessionImpl - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2008-06-06 21:08:51.561 [8] DEBUG NHibernate.Impl.SessionImpl - executing flush
+2008-06-06 21:08:51.561 [8] DEBUG NHibernate.Impl.ConnectionManager - registering flush begin
+2008-06-06 21:08:51.561 [8] DEBUG NHibernate.Impl.ConnectionManager - registering flush end
+2008-06-06 21:08:51.561 [8] DEBUG NHibernate.Impl.SessionImpl - post flush
+2008-06-06 21:08:51.561 [8] DEBUG NHibernate.Impl.SessionImpl - before transaction completion
+2008-06-06 21:08:51.561 [8] DEBUG NHibernate.Impl.ConnectionManager - aggressively releasing database connection
+2008-06-06 21:08:51.561 [8] DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+2008-06-06 21:08:51.577 [8] DEBUG NHibernate.Impl.SessionImpl - transaction completion
+2008-06-06 21:08:51.577 [8] DEBUG NHibernate.Transaction.AdoTransaction - running AdoTransaction.Dispose()
+2008-06-06 21:08:51.577 [8] DEBUG NHibernate.Impl.SessionImpl - closing session
+2008-06-06 21:08:51.577 [8] DEBUG NHibernate.Impl.BatcherImpl - running BatcherImpl.Dispose(true)
+2008-06-06 21:08:51.608 [8] DEBUG NHibernate.Impl.SessionImpl - opened session
+2008-06-06 21:08:51.608 [8] DEBUG NHibernate.Transaction.AdoTransaction - begin
+2008-06-06 21:08:51.608 [8] DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+2008-06-06 21:08:51.624 [8] DEBUG NHibernate.Transaction.AdoTransaction - commit
+2008-06-06 21:08:51.624 [8] DEBUG NHibernate.Impl.SessionImpl - flushing session
+2008-06-06 21:08:51.624 [8] DEBUG NHibernate.Impl.SessionImpl - Flushing entities and processing referenced collections
+2008-06-06 21:08:51.624 [8] DEBUG NHibernate.Impl.SessionImpl - Processing unreferenced collections
+2008-06-06 21:08:51.624 [8] DEBUG NHibernate.Impl.SessionImpl - scheduling collection removes/(re)creates/updates
+2008-06-06 21:08:51.624 [8] DEBUG NHibernate.Impl.SessionImpl - Flushed: 0 insertions, 0 updates, 0 deletions to 0 objects
+2008-06-06 21:08:51.624 [8] DEBUG NHibernate.Impl.SessionImpl - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2008-06-06 21:08:51.624 [8] DEBUG NHibernate.Impl.SessionImpl - executing flush
+2008-06-06 21:08:51.624 [8] DEBUG NHibernate.Impl.ConnectionManager - registering flush begin
+2008-06-06 21:08:51.624 [8] DEBUG NHibernate.Impl.ConnectionManager - registering flush end
+2008-06-06 21:08:51.624 [8] DEBUG NHibernate.Impl.SessionImpl - post flush
+2008-06-06 21:08:51.624 [8] DEBUG NHibernate.Impl.SessionImpl - before transaction completion
+2008-06-06 21:08:51.639 [8] DEBUG NHibernate.Impl.ConnectionManager - aggressively releasing database connection
+2008-06-06 21:08:51.639 [8] DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+2008-06-06 21:08:51.639 [8] DEBUG NHibernate.Impl.SessionImpl - transaction completion
+2008-06-06 21:08:51.639 [8] DEBUG NHibernate.Transaction.AdoTransaction - running AdoTransaction.Dispose()
+2008-06-06 21:08:51.639 [8] DEBUG NHibernate.Impl.SessionImpl - closing session
+2008-06-06 21:08:51.639 [8] DEBUG NHibernate.Impl.BatcherImpl - running BatcherImpl.Dispose(true)
+2008-06-06 21:08:51.655 [4] DEBUG NHibernate.Impl.SessionImpl - opened session
+2008-06-06 21:08:51.655 [4] DEBUG NHibernate.Transaction.AdoTransaction - begin
+2008-06-06 21:08:51.655 [4] DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+2008-06-06 21:08:51.670 [4] DEBUG NHibernate.Transaction.AdoTransaction - commit
+2008-06-06 21:08:51.670 [4] DEBUG NHibernate.Impl.SessionImpl - flushing session
+2008-06-06 21:08:51.670 [4] DEBUG NHibernate.Impl.SessionImpl - Flushing entities and processing referenced collections
+2008-06-06 21:08:51.670 [4] DEBUG NHibernate.Impl.SessionImpl - Processing unreferenced collections
+2008-06-06 21:08:51.670 [4] DEBUG NHibernate.Impl.SessionImpl - scheduling collection removes/(re)creates/updates
+2008-06-06 21:08:51.670 [4] DEBUG NHibernate.Impl.SessionImpl - Flushed: 0 insertions, 0 updates, 0 deletions to 0 objects
+2008-06-06 21:08:51.670 [4] DEBUG NHibernate.Impl.SessionImpl - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2008-06-06 21:08:51.670 [4] DEBUG NHibernate.Impl.SessionImpl - executing flush
+2008-06-06 21:08:51.670 [4] DEBUG NHibernate.Impl.ConnectionManager - registering flush begin
+2008-06-06 21:08:51.670 [4] DEBUG NHibernate.Impl.ConnectionManager - registering flush end
+2008-06-06 21:08:51.670 [4] DEBUG NHibernate.Impl.SessionImpl - post flush
+2008-06-06 21:08:51.670 [4] DEBUG NHibernate.Impl.SessionImpl - before transaction completion
+2008-06-06 21:08:51.670 [4] DEBUG NHibernate.Impl.ConnectionManager - aggressively releasing database connection
+2008-06-06 21:08:51.670 [4] DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+2008-06-06 21:08:51.686 [8] DEBUG NHibernate.Impl.SessionImpl - opened session
+2008-06-06 21:08:51.686 [8] DEBUG NHibernate.Transaction.AdoTransaction - begin
+2008-06-06 21:08:51.686 [8] DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+2008-06-06 21:08:51.686 [4] DEBUG NHibernate.Impl.SessionImpl - transaction completion
+2008-06-06 21:08:51.686 [4] DEBUG NHibernate.Transaction.AdoTransaction - running AdoTransaction.Dispose()
+2008-06-06 21:08:51.686 [4] DEBUG NHibernate.Impl.SessionImpl - closing session
+2008-06-06 21:08:51.686 [4] DEBUG NHibernate.Impl.BatcherImpl - running BatcherImpl.Dispose(true)
+2008-06-06 21:08:51.702 [8] DEBUG NHibernate.Transaction.AdoTransaction - commit
+2008-06-06 21:08:51.702 [8] DEBUG NHibernate.Impl.SessionImpl - flushing session
+2008-06-06 21:08:51.702 [8] DEBUG NHibernate.Impl.SessionImpl - Flushing entities and processing referenced collections
+2008-06-06 21:08:51.717 [8] DEBUG NHibernate.Impl.SessionImpl - Processing unreferenced collections
+2008-06-06 21:08:51.717 [8] DEBUG NHibernate.Impl.SessionImpl - scheduling collection removes/(re)creates/updates
+2008-06-06 21:08:51.717 [8] DEBUG NHibernate.Impl.SessionImpl - Flushed: 0 insertions, 0 updates, 0 deletions to 0 objects
+2008-06-06 21:08:51.717 [8] DEBUG NHibernate.Impl.SessionImpl - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2008-06-06 21:08:51.717 [8] DEBUG NHibernate.Impl.SessionImpl - executing flush
+2008-06-06 21:08:51.717 [8] DEBUG NHibernate.Impl.ConnectionManager - registering flush begin
+2008-06-06 21:08:51.717 [8] DEBUG NHibernate.Impl.ConnectionManager - registering flush end
+2008-06-06 21:08:51.717 [8] DEBUG NHibernate.Impl.SessionImpl - post flush
+2008-06-06 21:08:51.717 [8] DEBUG NHibernate.Impl.SessionImpl - before transaction completion
+2008-06-06 21:08:51.717 [8] DEBUG NHibernate.Impl.ConnectionManager - aggressively releasing database connection
+2008-06-06 21:08:51.717 [8] DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+2008-06-06 21:08:51.717 [8] DEBUG NHibernate.Impl.SessionImpl - transaction completion
+2008-06-06 21:08:51.717 [8] DEBUG NHibernate.Transaction.AdoTransaction - running AdoTransaction.Dispose()
+2008-06-06 21:08:51.717 [8] DEBUG NHibernate.Impl.SessionImpl - closing session
+2008-06-06 21:08:51.717 [8] DEBUG NHibernate.Impl.BatcherImpl - running BatcherImpl.Dispose(true)
+2008-06-06 21:08:51.748 [8] DEBUG NHibernate.Impl.SessionImpl - opened session
+2008-06-06 21:08:51.748 [8] DEBUG NHibernate.Transaction.AdoTransaction - begin
+2008-06-06 21:08:51.748 [8] DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+2008-06-06 21:08:51.764 [8] DEBUG NHibernate.Transaction.AdoTransaction - commit
+2008-06-06 21:08:51.764 [8] DEBUG NHibernate.Impl.SessionImpl - flushing session
+2008-06-06 21:08:51.764 [8] DEBUG NHibernate.Impl.SessionImpl - Flushing entities and processing referenced collections
+2008-06-06 21:08:51.764 [8] DEBUG NHibernate.Impl.SessionImpl - Processing unreferenced collections
+2008-06-06 21:08:51.764 [8] DEBUG NHibernate.Impl.SessionImpl - scheduling collection removes/(re)creates/updates
+2008-06-06 21:08:51.764 [8] DEBUG NHibernate.Impl.SessionImpl - Flushed: 0 insertions, 0 updates, 0 deletions to 0 objects
+2008-06-06 21:08:51.764 [8] DEBUG NHibernate.Impl.SessionImpl - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2008-06-06 21:08:51.764 [8] DEBUG NHibernate.Impl.SessionImpl - executing flush
+2008-06-06 21:08:51.764 [8] DEBUG NHibernate.Impl.ConnectionManager - registering flush begin
+2008-06-06 21:08:51.764 [8] DEBUG NHibernate.Impl.ConnectionManager - registering flush end
+2008-06-06 21:08:51.764 [8] DEBUG NHibernate.Impl.SessionImpl - post flush
+2008-06-06 21:08:51.764 [8] DEBUG NHibernate.Impl.SessionImpl - before transaction completion
+2008-06-06 21:08:51.764 [8] DEBUG NHibernate.Impl.ConnectionManager - aggressively releasing database connection
+2008-06-06 21:08:51.764 [8] DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+2008-06-06 21:08:51.764 [8] DEBUG NHibernate.Impl.SessionImpl - transaction completion
+2008-06-06 21:08:51.764 [8] DEBUG NHibernate.Transaction.AdoTransaction - running AdoTransaction.Dispose()
+2008-06-06 21:08:51.764 [8] DEBUG NHibernate.Impl.SessionImpl - closing session
+2008-06-06 21:08:51.764 [8] DEBUG NHibernate.Impl.BatcherImpl - running BatcherImpl.Dispose(true)

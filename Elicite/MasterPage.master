@@ -1,0 +1,97 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title></title>
+    <script type="text/javascript" src="javascript/jquery.js"></script>
+    <script type="text/javascript" src="javascript/interface.js"></script>
+    <script type="text/javascript" src="javascript/geralzao.js"></script>
+    <script type="text/javascript" src="include/funcoes_gerais.js"></script>
+    
+<!--[if lt IE 7]>
+ <style type="text/css">
+ div, img { behavior: url(iepngfix.htc) }
+ </style>
+<![endif]-->
+<link href="estilo/dock.css" rel="stylesheet" type="text/css" />
+<link href="estilo/master.css" rel="stylesheet" type="text/css" />
+<link href="estilo/cadastros.css" rel="stylesheet" type="text/css" />
+<link href="include/estilo.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div id="cabecalho">
+            <div id="logo" style="float:left;">
+                <a href="Inicial.aspx"><img src="imagens/originais/logo_elicite.png" style="width: 240px; height: 99px" alt="logo" /></a>
+            </div>
+            <div id="menu" style="float: left;">
+                <div class="dock" id="dock">
+                    <div class="dock-container">
+                        <a class="dock-item" href="InserirRequisito.aspx"><img src="imagens/originais/botao_menu_req.png" alt="home" /><span>Inserir Requisito</span></a> 
+                        <a class="dock-item" href="InserirCasoDeUso.aspx"><img src="imagens/originais/botao_menu_casouso.png" alt="contact" /><span>Inserir Caso de Uso</span></a> 
+                        <a class="dock-item" href="MatrizRequisitoParaRequisito.aspx"><img src="imagens/originais/botao_menu_matriz.png" alt="portfolio" /><span>Matriz de Rastreabilidade Requisito X Requisito</span></a>
+                        <a class="dock-item" href="MatrizRequisitoParaCasoDeUso.aspx"><img src="imagens/originais/botao_menu_matriz.png" alt="portfolio" /><span>Matriz de Rastreabilidade Caso de Uso X Requisito</span></a> 
+                        <a class="dock-item" href="InserirAtor.aspx"><img src="imagens/originais/botao_menu.png" alt="video" /><span>Cadastro de Atores</span></a>
+                        <asp:HyperLink ID="lnkProjeto" runat="server" CssClass="dock-item" Visible="false" NavigateUrl="~/CadastroProjeto.aspx">
+                            <img src="imagens/originais/botao_menu_proj.png" alt="music" /><span>Cadastro de Projetos</span>
+                        </asp:HyperLink>
+                        <asp:HyperLink ID="lnkUsuario" runat="server" CssClass="dock-item" Visible="false" NavigateUrl="~/CadastroUsuario.aspx">
+                            <img src="imagens/originais/botao_menu_proj.png" alt="music" /><span>Cadastro de Usuários</span>
+                        </asp:HyperLink>
+                        <a class="dock-item" href="Logout.aspx"><img src="imagens/originais/botao_menu.png" alt="video" /><span>Logout</span></a>
+                    </div>
+                </div>
+                <div id="navegacao">
+                    <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+                    </asp:SiteMapPath>
+                </div>
+        </div>
+        </div>
+        
+        <div id="corpo">
+            <div id="paineis">
+                <div id="painel1">
+                    <asp:TreeView ID="TreeView1" runat="server" ShowLines="True">
+                        <Nodes>
+                            <asp:TreeNode Text="Requisitos Funcionais" Value="RequisitosFuncionais" Expanded="False">
+                            </asp:TreeNode>
+                            <asp:TreeNode Text="Requisitos N&#227;o-Funcionais" Value="RequisitosNaoFuncionais" Expanded="False">
+                            </asp:TreeNode>
+                            <asp:TreeNode Text="Casos de Uso" Value="CasosDeUso" Expanded="False">
+                            </asp:TreeNode>
+                        </Nodes>
+                    </asp:TreeView>
+                </div>
+            </div>
+            <div id="conteudo">
+                <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+                </asp:contentplaceholder>
+            </div>
+        </div>
+    </div>
+    </form>
+    
+<script type="text/javascript">
+$(document).ready(
+	function()
+	{
+		$('#dock').Fisheye(
+			{
+				maxWidth: 50,
+				items: 'a',
+				itemsText: 'span',
+				container: '.dock-container',
+				itemWidth: 40,
+				proximity: 90,
+				halign : 'center'
+			}
+		)
+	}
+);
+</script>
+
+</body>
+</html>

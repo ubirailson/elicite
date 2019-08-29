@@ -1,0 +1,32 @@
+﻿/* dock - top */
+.dock {
+	position: relative; 
+	vertical-align: top;
+	height: 90px; 
+	text-align: center;
+}
+.dock-container {
+	position: absolute;
+	height: 90px;
+	/*background: url(images/dock-bg2.gif);*/
+	padding-left: 5px;
+}
+a.dock-item {
+	display: block;
+	width: 90px;
+	color: #000;
+	position: absolute;
+	top: 0px;
+	text-align: center;
+	text-decoration: none;
+	font: bold 12px Arial, Helvetica, sans-serif;
+}
+.dock-item img {
+	border: none; 
+	margin: 5px 10px 0px; 
+	width: 100%; 
+}
+.dock-item span {
+	display: none; 
+	padding-left: 5px;
+}

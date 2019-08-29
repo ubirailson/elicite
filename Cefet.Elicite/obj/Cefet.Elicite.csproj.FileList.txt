@@ -1,0 +1,16 @@
+obj\Debug\ResolveAssemblyReference.cache
+bin\Debug\Cefet.Elicite.dll
+bin\Debug\Cefet.Elicite.pdb
+bin\Debug\Cefet.Util.dll
+bin\Debug\Cefet.Util.pdb
+obj\Debug\Cefet.Elicite.dll
+obj\Debug\Cefet.Elicite.pdb
+obj\Debug\Cefet.Elicite.Dominio.Ator.hbm.xml
+obj\Debug\Cefet.Elicite.Dominio.Fluxo.hbm.xml
+obj\Debug\Cefet.Elicite.Dominio.Historico.hbm.xml
+obj\Debug\Cefet.Elicite.Dominio.Projeto.hbm.xml
+obj\Debug\Cefet.Elicite.Dominio.Revisavel.hbm.xml
+obj\Debug\Cefet.Elicite.Dominio.TipoFluxo.hbm.xml
+obj\Debug\Cefet.Elicite.Dominio.TipoRequisito.hbm.xml
+obj\Debug\Cefet.Elicite.Dominio.TipoUsuario.hbm.xml
+obj\Debug\Cefet.Elicite.Dominio.Usuario.hbm.xml

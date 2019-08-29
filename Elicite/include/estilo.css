@@ -1,0 +1,198 @@
+/**
+ * ***************************************************
+ * *** Estilos para aplicar no componente GridView ***
+ * ***************************************************
+ *
+ *aplica-se ao gridview, dentro da tag <table>
+ */
+.gridview
+{
+	color:black;
+	background-color:white;
+	border-color:#336666;
+	border-width:1px;
+	border-style:solid;
+	border-collapse:collapse;	
+}
+.gridview a:hover{
+	color: #000000;
+	font-weight: bold;
+	text-decoration:underline;
+}
+.gridview a:link {
+	color: white;
+	font-weight: bold;
+	text-decoration:underline;
+}
+.gridview a:visited
+{
+	color: white;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.gridview a:active {
+	color: white;
+	font-weight: bold;
+	text-decoration: underline;
+}
+/*aplica-se ao <tr> do cabeçalho */
+.gridview_header
+{
+	background-color:#0099FF;
+	font-weight:bold;
+	color:white;
+}
+/*aplica-se ao <tr> do rodapé */
+.rodape
+{
+	background-color:#0099FF;
+	font-weight:bold;
+	color:white;
+	text-align:right;
+}
+/*aplica-se ao <tr> do paginador */
+.gridview_pager
+{
+	background-color:#0099FF;
+	color:white;
+}
+/*aplica-se ao <tr> da linha selecionada */
+.gridview_selected_row
+{
+	background-color:#FFEFD5;
+	font-weight:bold;
+	color:#A9A9A9;
+}
+span.gridview_selected_row
+{
+	background-color:#FFEFD5;
+	font-weight:bold;
+	color:#A9A9A9;
+}
+/*aplica-se ao <tr> da linha alternada */
+.gridview_alternating
+{
+	background-color:#F7F6F3;
+}
+/******************************************************
+Elementos de Formulário
+*******************************************************/
+a:hover.linkbutton {
+	color: black;
+	font-weight: bold;
+	text-decoration:underline;
+}
+a:link.linkbutton  {
+	color: black;
+	font-weight: normal;
+	text-decoration:underline;
+}
+a:visited.linkbutton 
+{
+	color: black;
+	font-weight: normal;
+	text-decoration: underline;
+}
+a:active.linkbutton  {
+	color: black;
+	font-weight: normal;
+	text-decoration: underline;
+}
+input 
+{
+	font-family: Verdana, Tahoma, Arial, sans-serif;
+	font-size: 8pt;
+	color: black;
+	border: 1px solid;
+	
+}
+textarea {
+	font-family: Verdana, Tahoma, Arial, sans-serif;
+	font-size: 8pt;
+	color: black; 
+	border: 1px solid;
+}
+select {
+	font-family: Verdana, Tahoma, Arial, sans-serif;
+	font-size: 8pt;
+	color: black;
+	border: 1px solid;
+}
+/*aplica-se ao label, dentro da tag <span>*/
+.label
+{
+    color:black;
+    /*font-weight:bold;*/
+}
+
+/******************************************************
+Elementos de link
+*******************************************************/
+a:link {
+	color: #000000;
+	font-weight: bold;
+	text-decoration: none;
+}
+a:visited
+{
+	color: maroon;
+	font-weight: bold;
+	text-decoration: none;
+}
+a:hover {
+	color: blue;
+	font-weight: bold;
+	text-decoration: underline;
+}
+a:active {
+	color: #FFCC00;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/******************************************************
+Elementos específicos
+*******************************************************/
+
+/*Css das abas*/
+.selecionado
+{
+	color: black;
+	font-size: 12pt;
+	background: #e3f0f8 url(../imagens/tab-esquerdo.gif) left top no-repeat;
+	text-decoration: none;
+	padding-left: 10px;
+}
+
+a:visited.selecionado
+{
+	color: #000000;
+}
+.selecionado span
+{
+	background: #e3f0f8 url(../imagens/tab-direito.gif) right top no-repeat;
+	padding-right: 10px;
+}
+.naoselecionado
+{
+	font-size: 12pt;
+	color: #000000;
+	background: orange url(../imagens/tab-esquerdo-laranja.gif) left top no-repeat;
+	text-decoration: none;
+	padding-left: 10px;	
+}
+.naoselecionado span
+{
+	background: url(../imagens/tab-direito-laranja.gif) right top no-repeat;
+	padding-right: 10px;
+}
+
+.blocoselecionado
+{
+	display:block;
+}
+
+.bloconaoselecionado
+{
+	display:none;
+}

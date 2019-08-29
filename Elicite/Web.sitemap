@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="index.aspx" title="Elicite"  description="Página Inicial">
+      <siteMapNode url="InserirCasoDeUso.aspx" title="Caso de uso"  description="" />
+      <siteMapNode url="InserirRequisito.aspx" title="Requisito"  description="" />
+      <siteMapNode url="InserirAtor.aspx" title="Cadastro de Atores no Projeto"  description="" />
+      <siteMapNode url="MatrizRequisitoParaCasoDeUso.aspx" title="Caso de Uso X Requisito"  description="" />
+      <siteMapNode url="MatrizRequisitoParaRequisito.aspx" title="Requisito funcional X Requisito não-funcional"  
+                   description="" />
+      <siteMapNode title="Administração" description="">
+        <siteMapNode url="CadastroUsuario.aspx" title="Cadastro de Usuários no sistema"  description="" />
+        <siteMapNode url="CadastroProjeto.aspx" title="Cadastro de Projetos no sistema"  description="" />
+      </siteMapNode>
+    </siteMapNode>
+</siteMap>

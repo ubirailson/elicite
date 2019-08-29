@@ -1,0 +1,117 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AB002D5B-9E70-4CFB-A178-3B1971944182}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Cefet.Elicite</RootNamespace>
+    <AssemblyName>Cefet.Elicite</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.DynamicProxy, Version=1.1.5.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL" />
+    <Reference Include="Iesi.Collections, Version=1.0.0.3, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL" />
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL" />
+    <Reference Include="NHibernate, Version=1.2.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL" />
+    <Reference Include="Npgsql, Version=0.99.3.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dominio\Ator.cs" />
+    <Compile Include="Dominio\AutenticacaoInvalidaException.cs" />
+    <Compile Include="Dominio\CasoDeUso.cs" />
+    <Compile Include="Dominio\Fluxo.cs" />
+    <Compile Include="Dominio\FluxoBasico.cs" />
+    <Compile Include="Dominio\Historico.cs" />
+    <Compile Include="Dominio\IFactoryRepository.cs" />
+    <Compile Include="Dominio\IEntity.cs" />
+    <Compile Include="Dominio\IRepository.cs" />
+    <Compile Include="Dominio\NegocioException.cs" />
+    <Compile Include="Persistencia\AbstractFactoryRepository.cs" />
+    <Compile Include="Dominio\IRepositoryAtor.cs" />
+    <Compile Include="Dominio\IRepositoryCasoDeUso.cs" />
+    <Compile Include="Dominio\IRepositoryProjeto.cs" />
+    <Compile Include="Dominio\IRepositoryRequisito.cs" />
+    <Compile Include="Dominio\IRepositoryTipoFluxo.cs" />
+    <Compile Include="Dominio\IRepositoryTipoRequisito.cs" />
+    <Compile Include="Dominio\IRepositoryUsuario.cs" />
+    <Compile Include="Dominio\Projeto.cs" />
+    <Compile Include="Dominio\Requisito.cs" />
+    <Compile Include="Dominio\Revisavel.cs" />
+    <Compile Include="Dominio\ServicoAutenticacao.cs" />
+    <Compile Include="Dominio\ServicoCadastro.cs" />
+    <Compile Include="Dominio\ServicoCasoDeUso.cs" />
+    <Compile Include="Dominio\ServicoRastreabilidade.cs" />
+    <Compile Include="Dominio\ServicoRequisito.cs" />
+    <Compile Include="Dominio\ServicoUsuario.cs" />
+    <Compile Include="Dominio\SubFluxo.cs" />
+    <Compile Include="Dominio\TipoFluxo.cs" />
+    <Compile Include="Dominio\TipoRequisito.cs" />
+    <Compile Include="Dominio\TipoUsuario.cs" />
+    <Compile Include="Dominio\Usuario.cs" />
+    <Compile Include="Dominio\UsuarioInexistenteException.cs" />
+    <Compile Include="Persistencia\AtorNHibernateDao.cs" />
+    <Compile Include="Persistencia\CasoDeUsoNHibernateDao.cs" />
+    <Compile Include="Persistencia\FactoryNHibernateDao.cs" />
+    <Compile Include="Persistencia\NHibernateDao.cs" />
+    <Compile Include="Persistencia\ProjetoNHibernateDao.cs" />
+    <Compile Include="Persistencia\RequisitoNHibernateDao.cs" />
+    <Compile Include="Persistencia\TipoFluxoNHibernateDao.cs" />
+    <Compile Include="Persistencia\TipoRequisitoNHibernateDao.cs" />
+    <Compile Include="Persistencia\UsuarioNHibernateDao.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cefet.Util\Cefet.Util.csproj">
+      <Project>{BC2A9BAC-0FD8-4618-83ED-239ADC39E484}</Project>
+      <Name>Cefet.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\NHibernate.dll" />
+    <EmbeddedResource Include="Dominio\Ator.hbm.xml" />
+    <EmbeddedResource Include="Dominio\Fluxo.hbm.xml" />
+    <Content Include="Dominio\FluxoBasico.hbm.xml" />
+    <EmbeddedResource Include="Dominio\Historico.hbm.xml" />
+    <EmbeddedResource Include="Dominio\Projeto.hbm.xml" />
+    <EmbeddedResource Include="Dominio\Revisavel.hbm.xml" />
+    <Content Include="Dominio\SubFluxo.hbm.xml" />
+    <EmbeddedResource Include="Dominio\TipoFluxo.hbm.xml" />
+    <EmbeddedResource Include="Dominio\TipoRequisito.hbm.xml" />
+    <EmbeddedResource Include="Dominio\TipoUsuario.hbm.xml" />
+    <EmbeddedResource Include="Dominio\Usuario.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Aplicacao\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

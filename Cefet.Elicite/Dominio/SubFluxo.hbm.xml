@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="Cefet.Elicite.Dominio.SubFluxo,Cefet.Elicite" table="sub_fluxo">
+
+		<id name="Id" column="id_fluxo" type="Int32" unsaved-value="0">
+			<generator class="sequence">
+        <param name="sequence">sq_sub_fluxo</param>
+      </generator>
+		</id>
+    
+		<many-to-one name="FluxoPai" column="id_fluxo_pai" 
+                 class="Cefet.Elicite.Dominio.Fluxo,Cefet.Elicite" />
+		<many-to-one name="TipoFluxo" column="id_tipo_fluxo" 
+                 class="Cefet.Elicite.Dominio.TipoFluxo,Cefet.Elicite" />
+
+    <many-to-one name="CasoDeUso" column="id_revisavel"
+                 class="Cefet.Elicite.Dominio.CasoDeUso,Cefet.Elicite" />
+		
+	</class>
+</hibernate-mapping>

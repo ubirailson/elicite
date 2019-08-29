@@ -1,0 +1,32 @@
+using System;
+using System.Data;
+using System.Configuration;
+using System.Collections;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Web.UI.HtmlControls;
+
+public partial class Logout : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        Object mensagem = Request.QueryString["mensagem"];
+        Object enderecoOriginante = Request.QueryString["ReturnUrl"];
+        Session.Abandon();
+        FormsAuthentication.SignOut();
+        if (mensagem != null)
+        {
+            String redirecionamento = "Index.aspx?mensagem=" + mensagem.ToString();
+            if (enderecoOriginante != null)
+            {
+                redirecionamento += "&ReturnUrl=" + enderecoOriginante.ToString();
+            }
+
+            Response.Redirect(redirecionamento, true);
+        }
+        Response.Redirect("Index.aspx", true);
+    }
+}

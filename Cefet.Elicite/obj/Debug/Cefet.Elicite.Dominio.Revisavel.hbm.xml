@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="Cefet.Elicite.Dominio.Revisavel,Cefet.Elicite" table="revisavel">
+
+		<id name="Id" column="id_revisavel" type="Int32" unsaved-value="0">
+			<generator class="sequence">
+        <param name="sequence">sq_revisavel</param>
+      </generator>
+		</id>
+    
+		<property column="codigo" type="Int32" name="Codigo" not-null="true" length="10" />
+    
+    <set name="Historicos" inverse="false" cascade="all-delete-orphan" lazy="false" >
+      <key column="id_revisavel" />
+      <one-to-many class="Cefet.Elicite.Dominio.Historico,Cefet.Elicite" />
+    </set>
+    
+    <joined-subclass name="Cefet.Elicite.Dominio.CasoDeUso,Cefet.Elicite" table="caso_de_uso">
+      <key column="id_revisavel"/>
+      
+      <property column="nome" type="String" name="Nome" not-null="true" length="30" />
+      <property column="resumo" type="String" name="Resumo" not-null="true" length="2000" />
+      <property column="pos_condicoes" type="String" name="PosCondicoes" length="2000" />
+      <property column="pre_condicoes" type="String" name="PreCondicoes" length="2000" />
+
+      <set name="FluxosBasicos" inverse="false" cascade="all-delete-orphan" lazy="false" >
+        <key column="id_revisavel" />
+        <one-to-many class="Cefet.Elicite.Dominio.FluxoBasico,Cefet.Elicite" />
+      </set>
+
+      <set name="SubFluxos" inverse="false" cascade="all-delete-orphan" lazy="true" >
+        <key column="id_revisavel" />
+        <one-to-many class="Cefet.Elicite.Dominio.SubFluxo,Cefet.Elicite" />
+      </set>
+      
+      <many-to-one name="Projeto" column="id_projeto"
+                   class="Cefet.Elicite.Dominio.Projeto,Cefet.Elicite" />
+      <set name="AtoresEnvolvidos" table="caso_de_uso_ator" lazy="true" >
+        <key column="id_caso_de_uso" />
+        <many-to-many column="id_ator"
+                   class="Cefet.Elicite.Dominio.Ator,Cefet.Elicite" />
+      </set>
+      <set name="CasosDeUsoIncluidos" table="caso_de_uso_include" lazy="true" >
+        <key column="id_caso_uso" />
+        <many-to-many column="id_include"
+                   class="Cefet.Elicite.Dominio.CasoDeUso,Cefet.Elicite" />
+      </set>
+      <set name="CasosDeUsoExtendidos" table="caso_de_uso_extends" lazy="true" >
+        <key column="id_caso_uso" />
+        <many-to-many column="id_extends"
+                   class="Cefet.Elicite.Dominio.CasoDeUso,Cefet.Elicite" />
+      </set>
+
+      <set name="CasosDeUsoQueMeIncluem" table="caso_de_uso_include" lazy="true" >
+        <key column="id_include" />
+        <many-to-many column="id_caso_uso"
+                   class="Cefet.Elicite.Dominio.CasoDeUso,Cefet.Elicite" />
+      </set>
+      <set name="CasosDeUsoQueMeExtendem" table="caso_de_uso_extends" lazy="true" >
+        <key column="id_extends" />
+        <many-to-many column="id_caso_uso"
+                   class="Cefet.Elicite.Dominio.CasoDeUso,Cefet.Elicite" />
+      </set>
+      <!--Os requisitos que rastreio, ou seja, minhas dependências-->
+      <set name="RequisitosRastreados" table="caso_de_uso_requisito" lazy="true" >
+        <key column="id_caso_de_uso" />
+        <many-to-many column="id_requisito"
+                   class="Cefet.Elicite.Dominio.Requisito,Cefet.Elicite" />
+      </set>
+    </joined-subclass>
+
+    <joined-subclass name="Cefet.Elicite.Dominio.Requisito,Cefet.Elicite" table="requisito">
+      <key column="id_revisavel"/>
+
+      <property column="descricao" type="String" name="Descricao" not-null="true" length="500" />
+      <property column="nome" type="String" name="Nome" length="50" />
+
+      <many-to-one name="Projeto" column="id_projeto"
+                   class="Cefet.Elicite.Dominio.Projeto,Cefet.Elicite" />
+      <many-to-one name="Atributo" column="id_tipo_requisito"
+                   class="Cefet.Elicite.Dominio.TipoRequisito,Cefet.Elicite" />
+
+      <!--Os requisitos que rastreio, ou seja, minhas dependências-->
+      <set name="RequisitosRastreados" inverse="false" table="requisito_requisito" lazy="true" >
+        <key column="id_rastreador" />
+        <many-to-many column="id_rastreado"
+                   class="Cefet.Elicite.Dominio.Requisito,Cefet.Elicite" />
+      </set>
+      <!--Os requisitos que me rastreiam, ou seja, dependem de mim -->
+      <set name="RequisitosRastreiam" table="requisito_requisito" lazy="true" >
+        <key column="id_rastreado" />
+        <many-to-many column="id_rastreador"
+                   class="Cefet.Elicite.Dominio.Requisito,Cefet.Elicite" />
+      </set>
+      <!--Os casos de uso que me rastreiam, ou seja, dependem de mim -->
+      <set name="CasosDeUsoRastreiam" table="caso_de_uso_requisito" lazy="true" >
+        <key column="id_requisito" />
+        <many-to-many column="id_caso_de_uso"
+                   class="Cefet.Elicite.Dominio.CasoDeUso,Cefet.Elicite" />
+      </set>
+    </joined-subclass>
+  </class>
+</hibernate-mapping>

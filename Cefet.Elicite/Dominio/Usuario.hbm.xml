@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="Cefet.Elicite.Dominio.Usuario,Cefet.Elicite" table="usuario">
+
+		<id name="Id" column="id_usuario" type="Int32" unsaved-value="0">
+      <generator class="sequence">
+        <param name="sequence">sq_usuario</param>
+      </generator>
+		</id>
+    <many-to-one name="TipoUsuario" lazy="false" column="id_tipo_usuario"
+                 class="Cefet.Elicite.Dominio.TipoUsuario,Cefet.Elicite" />
+    <set name="Projetos" inverse="true"  table="usuario_projeto" lazy="true" cascade="none" >
+      <key column="id_usuario" />
+      <many-to-many  column="id_projeto"
+                     class="Cefet.Elicite.Dominio.Projeto,Cefet.Elicite" />
+    </set>
+    
+    <property column="nome" type="String" name="Nome" not-null="true" length="50" />
+		<property column="email" type="String" name="Email" not-null="true" length="30" />
+		<property column="senha" type="String" name="Senha" not-null="true" length="50" />
+		
+		
+	</class>
+</hibernate-mapping>

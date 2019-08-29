@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="Cefet.Elicite.Dominio.Projeto,Cefet.Elicite" table="projeto">
+
+		<id name="Id" column="id_projeto" type="Int32" unsaved-value="0">
+      <generator class="sequence" >
+        <param name="sequence">sq_projeto</param>
+      </generator>
+		</id>
+    
+    <set name="Usuarios" table="usuario_projeto" lazy="true" cascade="none" >
+      <key column="id_projeto" />
+      <many-to-many column="id_usuario"
+                 class="Cefet.Elicite.Dominio.Usuario,Cefet.Elicite" />
+    </set>
+    <set name="CasosDeUso" inverse="true" lazy="true">
+      <key column="id_projeto" />
+      <one-to-many class="Cefet.Elicite.Dominio.CasoDeUso,Cefet.Elicite" />
+    </set>
+    <set name="Requisitos" inverse="true" lazy="true">
+      <key column="id_projeto" />
+      <one-to-many class="Cefet.Elicite.Dominio.Requisito,Cefet.Elicite" />
+    </set>
+    <set name="AtoresEnvolvidos" inverse="true" lazy="true">
+      <key column="id_projeto" />
+      <one-to-many class="Cefet.Elicite.Dominio.Ator,Cefet.Elicite" />
+    </set>
+    
+    <property column="data_criacao" type="DateTime" name="DataCriacao" not-null="true" />
+		<property column="nome" type="String" name="Nome" not-null="true" length="30" />
+		
+	</class>
+</hibernate-mapping>

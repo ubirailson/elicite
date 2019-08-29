@@ -1,0 +1,61 @@
+﻿body {
+	/*font: 11px Arial, Helvetica, sans-serif;*/
+	/*background: #ffffff url(images/main-bg.gif);*/
+	padding: 0;
+	margin: 0;
+}
+img {
+	border: none;
+}
+div#cabecalho
+{
+	width: 100%;
+    border: 1px black solid;
+}
+div#logo
+{
+	width: 238px;
+    float: left;
+    /*border: 1px black solid;*/
+}
+div#menu
+{
+	width: 59%;
+    float: left;
+    margin-top: 25px;
+    /*border: 1px black solid;*/    
+}
+div#corpo
+{
+    margin-top: 5px;
+}
+div#paineis
+{
+    float: left;
+    width: 30%;
+}
+div#painel1
+{
+
+}
+div#painel2
+{
+
+}
+div#conteudo
+{
+    float: left;
+    width:69%;    
+}
+
+
+
+
+
+
+
+
+
+
+
+

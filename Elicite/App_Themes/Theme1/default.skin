@@ -1,0 +1,62 @@
+<%--
+Skin para label
+
+<asp:Label runat="server" CssClass="label" />
+<asp:Label runat="server" SkinId="label_gridview" CssClass="gridview_selected_row" />
+--%>
+<%--
+Skins para linkbuttons
+--%>
+<asp:LinkButton runat="server" CssClass="linkbutton" SkinId="linkbutton" />
+<%--
+Skin para image
+--%>
+<asp:Image runat="server" Imageurl="~/Image/erro.gif" SkinId="erro" />
+<%--
+Skins para imagebuttons
+--%>
+<asp:ImageButton runat="server" Imageurl="~/Image/btnnovo.gif" SkinId="novo" />
+<asp:ImageButton runat="server" Imageurl="~/Image/btnsalvar.gif" SkinId="salvar" />
+<asp:ImageButton runat="server" ImageUrl="~/Image/btnsalvar.gif" SkinId="alterar" />
+<asp:ImageButton runat="server" ImageUrl="~/Image/btncancelar.jpg" SkinId="cancelar" />
+<asp:ImageButton runat="server" Imageurl="~/Image/btnconsultar.gif" SkinId="consultar" />
+<asp:ImageButton runat="server" Imageurl="~/Image/btnexcluir.gif" SkinId="excluir" />
+<asp:ImageButton runat="server" Imageurl="~/Image/btnfechar.jpg" SkinId="fechar" />
+<asp:ImageButton runat="server" Imageurl="~/Image/btnvisualizar.gif" SkinId="visualizar" />
+<asp:ImageButton runat="server" Imageurl="~/Image/btnvoltar.gif" SkinId="voltar" />
+<asp:ImageButton runat="server" Imageurl="~/Image/ok.gif" SkinId="ok" />
+<%--
+Skins para imagebuttons desabilitados
+--%>
+<asp:ImageButton runat="server" Imageurl="~/Image/btnnovo_desabilitado.gif" SkinId="novo_desabilitado" />
+<asp:ImageButton runat="server" Imageurl="~/Image/btnsalvar_desabilitado.gif" SkinId="salvar_desabilitado" />
+<asp:ImageButton runat="server" ImageUrl="~/Image/btnsalvar_desabilitado.gif" SkinId="alterar_desabilitado" />
+<asp:ImageButton runat="server" ImageUrl="~/Image/btncancelar_desabilitado.jpg" SkinId="cancelar_desabilitado" />
+<asp:ImageButton runat="server" Imageurl="~/Image/btnconsultar_desabilitado.gif" SkinId="consultar_desabilitado" />
+<asp:ImageButton runat="server" Imageurl="~/Image/btnexcluir_desabilitado.gif" SkinId="excluir_desabilitado" />
+<asp:ImageButton runat="server" Imageurl="~/Image/btnfechar_desabilitado.jpg" SkinId="fechar_desabilitado" />
+<asp:ImageButton runat="server" Imageurl="~/Image/btnvisualizar_desabilitado.gif" SkinId="visualizar_desabilitado" />
+<asp:ImageButton runat="server" Imageurl="~/Image/btnvoltar_desabilitado.gif" SkinId="voltar_desabilitado" />
+<asp:ImageButton runat="server" Imageurl="~/Image/ok_desabilitado.gif" SkinId="ok_desabilitado" />
+
+<asp:GridView runat="server" AutoGenerateColumns="False" CssClass="gridview" AllowPaging="True" 
+    GridLines="Both">
+    <FooterStyle BackColor="#0099ff" ForeColor="White" Font-Bold="true" HorizontalAlign="Right" />
+    <PagerStyle CssClass="gridview_pager" HorizontalAlign="Center" />
+    <SelectedRowStyle CssClass="gridview_selected_row" />
+    <HeaderStyle CssClass="gridview_header" />
+    <AlternatingRowStyle CssClass="gridview_alternating" />
+</asp:GridView>
+<%-- 
+Skin para Menu
+--%>
+<asp:Menu runat="server" Orientation="Horizontal" BackColor="#0099ff" DynamicHorizontalOffset="10"
+    DynamicVerticalOffset="8" ForeColor="White"  StaticSubMenuIndent="10px">
+    <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+    <StaticSelectedStyle BackColor="#0099ff" />
+    <StaticHoverStyle BackColor="#0099ff" ForeColor="White" />
+    <DynamicHoverStyle BackColor="#0099ff" ForeColor="White" />
+    <DynamicMenuStyle BackColor="#0099ff" />
+    <DynamicSelectedStyle BackColor="#0099ff" />
+    <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" BorderColor="Silver" BorderWidth="1px" />
+</asp:Menu>

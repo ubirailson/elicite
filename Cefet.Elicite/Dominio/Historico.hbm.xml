@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="Cefet.Elicite.Dominio.Historico,Cefet.Elicite" table="historico">
+
+		<id name="Id" column="id_historico" type="Int32" unsaved-value="0">
+			<generator class="sequence">
+        <param name="sequence">sq_historico</param>
+      </generator>
+		</id>
+		<property column="data" type="DateTime" name="Data" not-null="true" />
+		<property column="descricao" type="String" name="Descricao" not-null="true" length="500" />
+		
+    <many-to-one name="Revisavel" column="id_revisavel" 
+                 class="Cefet.Elicite.Dominio.Revisavel,Cefet.Elicite" />
+		<many-to-one name="Autor" column="id_usuario" 
+                 class="Cefet.Elicite.Dominio.Usuario,Cefet.Elicite" />
+		
+	</class>
+</hibernate-mapping>

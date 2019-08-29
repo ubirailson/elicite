@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="Cefet.Elicite.Dominio.Fluxo,Cefet.Elicite" table="fluxo">
+
+		<id name="Id" column="id_fluxo" type="Int32" unsaved-value="0">
+			<generator class="sequence">
+        <param name="sequence">sq_fluxo</param>
+      </generator>
+		</id>
+		
+    <property column="detalhamento" type="String" name="Detalhamento" not-null="true" length="2000" />
+		<property column="nome_fluxo" type="String" name="NomeFluxo" not-null="true" length="50" />
+
+    <joined-subclass name="Cefet.Elicite.Dominio.SubFluxo,Cefet.Elicite" table="sub_fluxo">
+      <key column="id_fluxo"/>
+
+      <many-to-one name="FluxoPai" column="id_fluxo_pai"
+             class="Cefet.Elicite.Dominio.Fluxo,Cefet.Elicite" />
+      <many-to-one name="TipoFluxo" column="id_tipo_fluxo"
+                   class="Cefet.Elicite.Dominio.TipoFluxo,Cefet.Elicite" />
+
+      <many-to-one name="CasoDeUso" column="id_revisavel"
+                   class="Cefet.Elicite.Dominio.CasoDeUso,Cefet.Elicite" />
+      
+    </joined-subclass>
+
+    <joined-subclass name="Cefet.Elicite.Dominio.FluxoBasico,Cefet.Elicite" table="fluxo_basico">
+      <key column="id_fluxo"/>
+      <many-to-one name="CasoDeUso" column="id_revisavel"
+               class="Cefet.Elicite.Dominio.CasoDeUso,Cefet.Elicite" />
+
+    </joined-subclass>
+    
+	</class>
+</hibernate-mapping>
